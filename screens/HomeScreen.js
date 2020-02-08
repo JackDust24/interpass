@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, useState }  from 'react';
+import { navigation } from 'react-navigation';
 import {
   SafeAreaView,
   StyleSheet,
@@ -14,91 +15,107 @@ const basketIcon = require('../images/basket.png');
 const chulaIcon = require('../images/ChulalongkornUniversity-Logo.png');
 let PATH_SEARCH = '../images/';
 
+  const HomeScreen = (props) => {
 
-
-function Item({ id, title, subtitle, icon, selected, onSelect }) {
-
-  var image = PATH_SEARCH;
-  const imageURL = {url:image};
-  //import urlImage from imageURL;
+      // super(props);
   
+      console.log("Check Props = " + this.props)
 
-// let iconPath = require({$image});
-console.log("Icon Path " + icon);
-console.log("Title" + title);
+    const [selected, setSelected] = React.useState(new Map());
+    
+      const onSelect = React.useCallback(
+        id => {
+          const newSelected = new Map(selected);
+          newSelected.set(id, !selected.get(id));
+    
+          setSelected(newSelected);
+        },
+        [selected],
+      );
+
+      const Item = ({ id, title, subtitle, icon, selected, onSelect }) => {
+
+        ///props = Item
+
+        var image = PATH_SEARCH;
+        const imageURL = {url:image};
+        //import urlImage from imageURL;
+        
+        console.log("Props " + this.props);
+        console.log("Props ID " + id);
 
 
-  return (
-    <TouchableOpacity 
-      onPress={() => onSelect(id)}
-      style={[
-        styles.item,
-        { backgroundColor: selected ? '#0063A7' : '#1B3D6D' },
-      ]}
-    >
-      <View style={styles.row}>
-        <View style={styles.iconContainer}>
-            <Image source={icon} style={styles.icon} />
+      // let iconPath = require({$image});
+      console.log("Icon Path " + icon);
+      console.log("Title" + title);
+      
+      
+        return (
+          <TouchableOpacity 
+            onPress={() => 
+              props.navigation.navigate('Faculties')
+              //onSelect(id)
+            }
+            style={[
+              styles.item,
+              { backgroundColor: selected ? '#0063A7' : '#1B3D6D' },
+            ]}
+          >
+            <View style={styles.row}>
+              <View style={styles.iconContainer}>
+                  <Image source={icon} style={styles.icon} />
+              </View>
+              <View style={styles.info}>
+                <Text style={styles.title}>{title}</Text>
+                <Text style={styles.address}>{subtitle}</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        );
+      }
+
+      return (
+        <SafeAreaView style={styles.mainContainer}>
+          <View style={styles.topSection}>
+          <Text style={styles.topSectionText}>
+          Universities
+          </Text>
         </View>
-        <View style={styles.info}>
-          <Text style={styles.title}>{title}</Text>
-          <Text style={styles.address}>{subtitle}</Text>
+        <View style={styles.middleSection}>
+          <Text style={styles.middleSectionText}>
+            Scroll down to find the University of your choice.
+          </Text>
         </View>
-      </View>
-    </TouchableOpacity>
-  );
-}
-
-export default function HomeScreen() {
-  const [selected, setSelected] = React.useState(new Map());
-
-  const onSelect = React.useCallback(
-    id => {
-      const newSelected = new Map(selected);
-      newSelected.set(id, !selected.get(id));
-
-      setSelected(newSelected);
-    },
-    [selected],
-  );
-
-
-  return (
-    <SafeAreaView style={styles.mainContainer}>
-      <View style={styles.topSection}>
-      <Text style={styles.topSectionText}>
-      Universities
-      </Text>
-    </View>
-    <View style={styles.middleSection}>
-      <Text style={styles.middleSectionText}>
-        Scroll down to find the University of your choice.
-      </Text>
-    </View>
-      <FlatList
-        data={data}
-        renderItem={({ item }) => (
-          <Item
-            id={item.uniId}
-            title={item.university}
-            subtitle={item.faculty}
-            icon={item.icon}
-            selected={!!selected.get(item.items)}
-            onSelect={onSelect}
+          <FlatList
+            data={data}
+            renderItem={({ item }) => (
+              <Item
+                id={item.uniId}
+                title={item.university}
+                subtitle={item.faculty}
+                icon={item.icon}
+                selected={!!selected.get(item.items)}
+                onSelect={onSelect}
+              />
+            )}
+            keyExtractor={item => item.uniId}
+            extraData={selected}
           />
-        )}
-        keyExtractor={item => item.uniId}
-        extraData={selected}
-      />
-    </SafeAreaView>
-  );
+        </SafeAreaView>
+      );
+  
 }
 
 HomeScreen.navigationOptions = {
   title: 'InterPASS',
   // headerStyle:{ backgroundColor: '#FFF'},
-  headerTitleStyle:{ fontSize: 24, padding: 5},
+  headerTitleStyle:{ fontSize: 24, marginTop: -35, color: '#FFF', justifyContent: 'center'},
+  headerStyle: {
+    backgroundColor: '#1B3D6D',
+  },  
 };
+
+
 
 const styles = StyleSheet.create({
   mainContainer: {
@@ -201,4 +218,5 @@ const styles = StyleSheet.create({
   }
 });
 
+export default HomeScreen;
 
