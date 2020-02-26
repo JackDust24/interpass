@@ -4,8 +4,12 @@ import * as Font from 'expo-font';
 import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-
+import { useScreens } from 'react-native-screens';
 import AppNavigator from './navigation/AppNavigator';
+import Colors from './constants/Colors';
+
+// This is just for helping the performance.
+useScreens();
 
 export default function App(props) {
   const [isLoadingComplete, setLoadingComplete] = useState(false);

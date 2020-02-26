@@ -4,6 +4,8 @@ import HomeScreen from '../screens/HomeScreen';
 import FacultyScreen from '../screens/FacultyScreen';
 import MajorsScreen from '../screens/MajorsScreen';
 import MajorsDetailsScreen from '../screens/MajorsDetailsScreen';
+import Colors from '../constants/Colors';
+
 
 const config = Platform.select({
     web: { headerMode: 'screen' },
@@ -12,22 +14,22 @@ const config = Platform.select({
 
 const StackNavigator = createStackNavigator({
     Universities: {
-        screen: HomeScreen,
+        screen: HomeScreen
         
-            headerLayoutPreset: 'center',
+           // headerLayoutPreset: 'center',
         
         //     initialRouteName: 'Home',
         //     /* The header config from HomeScreen is now here */
         //     defaultNavigationOptions: {
         //       headerStyle: {
-        //         backgroundColor: '#1B3D6D',
+        //         backgroundColor: Colors.interPassDarkBlue,
         //       },
         //       headerTintColor: '#fff',
         //       headerTitleStyle: {
         //         fontWeight: 'bold',
         //       },
         //     },
-        //   config
+       //   config
     },
     Faculties: {
         screen: FacultyScreen

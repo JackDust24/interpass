@@ -11,4 +11,9 @@ export default {
   warningText: '#666804',
   noticeBackground: tintColor,
   noticeText: '#fff',
+  interPassYellow: '#FFD100',
+  interPassBlue: '#0063A7',
+  interPassDarkBlue: '#1B3D6D'
 };
+
+
