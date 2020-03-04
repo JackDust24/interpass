@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import { AppLoading } from 'expo';
 import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
@@ -35,10 +37,20 @@ export default function App(props) {
 }
 
 async function loadResourcesAsync() {
+  // Load up all the images
   await Promise.all([
     Asset.loadAsync([
-      require('./assets/images/robot-dev.png'),
-      require('./assets/images/robot-prod.png'),
+      require('./images/Chulalongkorn.png'),
+      require('./images/Thammasat.png'),
+      require('./images/ChiangMai.png'),
+      require('./images/Kasetsart.png'),
+      require('./images/KhonKaen.png'),
+      require('./images/KMITL.png'),
+      require('./images/KMUTT.png'),
+      require('./images/Mahidol.png'),
+      require('./images/Srinakharinwirot.png'),
+      require('./images/Silpakorn.png'),
+      require('./images/Suranaree.png'),
     ]),
     Font.loadAsync({
       // This is the font that we are using for our tab bar

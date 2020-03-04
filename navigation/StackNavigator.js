@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+/* This is the main navigation screen from Home */
+
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import HomeScreen from '../screens/HomeScreen';
@@ -6,7 +9,7 @@ import MajorsScreen from '../screens/MajorsScreen';
 import MajorsDetailsScreen from '../screens/MajorsDetailsScreen';
 import Colors from '../constants/Colors';
 
-
+// CAN REMOVE THIS PART
 const config = Platform.select({
     web: { headerMode: 'screen' },
     default: {},
@@ -15,21 +18,6 @@ const config = Platform.select({
 const StackNavigator = createStackNavigator({
     Universities: {
         screen: HomeScreen
-        
-           // headerLayoutPreset: 'center',
-        
-        //     initialRouteName: 'Home',
-        //     /* The header config from HomeScreen is now here */
-        //     defaultNavigationOptions: {
-        //       headerStyle: {
-        //         backgroundColor: Colors.interPassDarkBlue,
-        //       },
-        //       headerTintColor: '#fff',
-        //       headerTitleStyle: {
-        //         fontWeight: 'bold',
-        //       },
-        //     },
-       //   config
     },
     Faculties: {
         screen: FacultyScreen

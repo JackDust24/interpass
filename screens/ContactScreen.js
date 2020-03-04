@@ -1,3 +1,7 @@
+/*jshint esversion: 6 */
+/* This is screen for to contact Interpass */
+
+
 import React, { Component, useState } from 'react';
 import {
     SafeAreaView,
@@ -11,13 +15,12 @@ import {
     Clipboard,
     Linking,
 } from 'react-native';
+
 import Colors from '../constants/Colors';
 
 export default function ContactScreen() {
 
     return (
- 
-
         <View style={styles.mainContainer}>
             <View style={styles.topSection}>
                 <Text style={styles.topSectionText}>Contact Us</Text>
@@ -25,7 +28,7 @@ export default function ContactScreen() {
             <View style={styles.middleSection}>
             {/* <TouchableOpacity> */}
             <ScrollView>
-                <Text selectable style={styles.middleSectionText}>🔥ฉีกทุกข้อจำกัดการเรียน 🔥</Text>
+                <Text style={styles.middleSectionText}>🔥ฉีกทุกข้อจำกัดการเรียน 🔥</Text>
                 <Text style={styles.middleSectionText}>📣เตรียมพร้อมสำหรับ TCAS ทั้ง INTER และหมอรอบ 1</Text>
                 <Text style={styles.middleSectionText}>🌟New Unlimited Inter Package</Text>
                 <Text style={styles.middleSectionText}>📌 เรียนได้ไม่อั้นทุกคอร์ส ทุกที่ ทุกเวลา</Text>
@@ -53,10 +56,6 @@ export default function ContactScreen() {
                 {/* </TouchableOpacity> */}
                      </ScrollView>
              </View>
-            {/**
-         * Go ahead and delete ExpoLinksView and replace it with your content;
-         * we just wanted to provide you with some helpful links.
-         */}
         </View>
 
     );
@@ -65,7 +64,6 @@ export default function ContactScreen() {
 //   ContactScreen.navigationOptions = {
 //     title: 'Contact',
 //   };
-
 
 const styles = StyleSheet.create({
     mainContainer: {
@@ -161,26 +159,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 16,
         marginBottom: 5,
-    },
-    address: {
-        // backgroundColor: '#0f1b29',
-        color: '#ccc',
-        fontSize: 14,
-        fontWeight: 'bold',
-        padding: 5,
-        textAlign: 'left',
-    },
-    total: {
-        width: 80,
-    },
-    date: {
-        fontSize: 12,
-        marginBottom: 5,
-    },
-    price: {
-        color: '#1cad61',
-        fontSize: 25,
-        fontWeight: 'bold',
     }
 });
 

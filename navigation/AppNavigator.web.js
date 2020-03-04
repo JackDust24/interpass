@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import { createBrowserApp } from '@react-navigation/web';
 import { createSwitchNavigator } from 'react-navigation';
 

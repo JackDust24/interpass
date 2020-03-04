@@ -1,5 +1,7 @@
 /*jshint esversion: 6 */
 
+/* CAN DELETE IN LATER VERSION */
+
 import React from 'react';
 import {
   SafeAreaView,

@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import React from 'react';
 import { Platform, Image, StyleSheet } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -22,32 +24,16 @@ const config = Platform.select({
 
 const HomeStack = createStackNavigator(
   {
-    // Home: HomeScreen,
     Home: {
       screen: HomeScreen
-      
-         // headerLayoutPreset: 'center',
-      
-      //     initialRouteName: 'Home',
-      //     /* The header config from HomeScreen is now here */
-      //     defaultNavigationOptions: {
-      //       headerStyle: {
-      //         backgroundColor: Colors.interPassDarkBlue,
-      //       },
-      //       headerTintColor: '#fff',
-      //       headerTitleStyle: {
-      //         fontWeight: 'bold',
-      //       },
-      //     },
-     //   config
-  },
-  Faculties: {
+    },
+    Faculties: {
       screen: FacultyScreen
-  },
-  Majors: {
+    },
+    Majors: {
       screen: MajorsScreen
-  },
-  Details: MajorsDetailsScreen
+    },
+    Details: MajorsDetailsScreen
   },
   {
     initialRouteName: 'Home',
@@ -55,11 +41,10 @@ const HomeStack = createStackNavigator(
     defaultNavigationOptions: {
       headerBackground: (
         <Image
-          style={{width: 180, height: 60, alignItems: "center", justifyContent: "center", position: 'absolute', left: '25%', marginTop: 28}}
-          source={ require('../images/Logo_InterPass-02.png')}
+          style={{ width: 180, height: 60, alignItems: "center", justifyContent: "center", position: 'absolute', left: '25%', marginTop: 28 }}
+          source={require('../images/Logo_InterPass-02.png')}
         />
       ),
-      //headerTitle: 'InterPASS',
       headerStyle: {
         backgroundColor: Colors.interPassDarkBlue,
       },
@@ -79,8 +64,8 @@ const HomeStack = createStackNavigator(
   //     Platform.OS === 'android' ? 'white' : Colors.primaryColor,
   //   headerTitle: 'A Screen'
   // }
-  
- config
+
+  config
 );
 
 HomeStack.navigationOptions = {
@@ -125,8 +110,8 @@ const ContactStack = createStackNavigator(
       },
       headerBackground: (
         <Image
-          style={{width: 180, height: 60, alignItems: "center", justifyContent: "center", position: 'absolute', left: '25%', marginTop: 28}}
-          source={ require('../images/Logo_InterPass-02.png')}
+          style={{ width: 180, height: 60, alignItems: "center", justifyContent: "center", position: 'absolute', left: '25%', marginTop: 28 }}
+          source={require('../images/Logo_InterPass-02.png')}
         />
       ),
     },
@@ -176,8 +161,8 @@ const PromosStack = createStackNavigator(
       },
       headerBackground: (
         <Image
-          style={{width: 180, height: 60, alignItems: "center", justifyContent: "center", position: 'absolute', left: '25%', marginTop: 28}}
-          source={ require('../images/Logo_InterPass-02.png')}
+          style={{ width: 180, height: 60, alignItems: "center", justifyContent: "center", position: 'absolute', left: '25%', marginTop: 28 }}
+          source={require('../images/Logo_InterPass-02.png')}
         />
       ),
     },

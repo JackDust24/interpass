@@ -1,4 +1,5 @@
 // Model for admissions
+/*** TO COME IN NEXT RELEASE FOR REFACTORING  ***/
 
 // // 1. Function to pass in the record.
 

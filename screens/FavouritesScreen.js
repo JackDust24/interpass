@@ -1,5 +1,7 @@
 /*jshint esversion: 6 */
 
+/* TO COME IN LATER VERSION */
+
 /*This is an example of Segmented Control Tab in React Native*/
 import React, { Component } from 'react';
 //Import React

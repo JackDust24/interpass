@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import React from 'react';
 import {
   SafeAreaView,
@@ -9,6 +11,8 @@ import {
   Button,
   Text,
 } from 'react-native';
+
+// Colours and Data are for the default colours, while data is for the Universities data
 import Colors from '../constants/Colors';
 import data from '../data/InterpassData.js'; // JSON file includes the data
 
@@ -19,124 +23,120 @@ const FacultyScreen = props => {
   const selectedId = data.find(data => data.university === universityId);
   console.log('SelectedId = ' + selectedId.university);
 
-  // Create the filtered array
+  // Create the filtered array for pushing all the faculties in that University into an array
   var facultyData = [];
 
   const filterFacultyByUni = data.filter(uni => uni.university === selectedId.university);
   console.log(filterFacultyByUni);
   filterFacultyByUni.map(Uni => {
-    console.log('Uni - ' + Uni)
+    console.log('Uni - ' + Uni);
     facultyData.push(Uni);
   });
 
+  // Sometimes there are more than one faculty, so we will have one array for the faculty names
   var facultyNames = [];
+  // We don't want to add more than one faculty of the same name, so we will add a record if that faculty is unique
   var facultyFilteredData = [];
 
-  facultyData.map(Uni => { 
+  facultyData.map(Uni => {
     console.log(facultyNames.includes(Uni.faculty) >= 1);
     const isAlreadyInList = facultyNames.includes(Uni.faculty) >= 1;
-    { isAlreadyInList ? 
-      console.log("Already in list" + Uni.faculty) 
-      : facultyFilteredData.push(Uni)
-      facultyNames.push(Uni.faculty)
+    {
+      isAlreadyInList ?
+        console.log("Already in list" + Uni.faculty)
+        : facultyFilteredData.push(Uni) &&
+        facultyNames.push(Uni.faculty)
     }
-  }
+  });
+
+  // Debugging
+  // console.log("Universities Array = " + facultyData);
+
+  // For when the user selects a row
+  const [selected, setSelected] = React.useState(new Map());
+
+  const onSelect = React.useCallback(
+    id => {
+      const newSelected = new Map(selected);
+      newSelected.set(id, !selected.get(id));
+
+      setSelected(newSelected);
+    },
+    [selected]
   );
 
-  console.log("Universities Array = " + facultyData)
+  // Iterate through the Faculties data one by one, that gets called by the render below
+  const Item = itemData => {
 
-  const [selected, setSelected] = React.useState(new Map());
-  
-    const onSelect = React.useCallback(
-      id => {
-        const newSelected = new Map(selected);
-        newSelected.set(id, !selected.get(id));
-  
-        setSelected(newSelected);
-      },
-      [selected],
-    );
-
-    const Item = itemData => {
-
-      const { id, uni, faculty, icon, selected, onSelect } = itemData;
-
-      return (
-        <TouchableOpacity 
-          style={[
-            styles.item,
-            { backgroundColor: selected ? Colors.interPassBlue : Colors.interPassDarkBlue },
-          ]}
-          onPress={() => {       
-            props.navigation.navigate({routeName: 'Majors',
-              params: {
-                id: uni,
-                facultyId: faculty
-              }
-              //onSelect(id)
-            });
-          }}
-          >
-          <View style={styles.row}>
-            <View style={styles.iconContainer}>
-                <Image source={icon} style={styles.icon} />
-            </View>
-            <View style={styles.info}>
-              <Text 
-              style={styles.title}>{faculty}</Text>
-              {/* <Text style={styles.address}>{subtitle}</Text> */}
-            </View>
-          </View>
-        </TouchableOpacity>
-      );
-    }
+    const { id, uni, faculty, icon, selected, onSelect } = itemData;
 
     return (
-      <SafeAreaView style={styles.mainContainer}>
-        <View style={styles.topSection}>
-          <Text 
+      <TouchableOpacity
+        style={[
+          styles.item,
+          { backgroundColor: selected ? Colors.interPassBlue : Colors.interPassDarkBlue },
+        ]}
+        onPress={() => {
+          props.navigation.navigate({
+            routeName: 'Majors',
+            params: {
+              id: uni,
+              facultyId: faculty
+            }
+            //onSelect(id)
+          });
+        }}
+      >
+        <View style={styles.row}>
+          <View style={styles.iconContainer}>
+            <Image source={icon} style={styles.icon} />
+          </View>
+          <View style={styles.info}>
+            <Text
+              style={styles.title}>{faculty}</Text>
+            {/* <Text style={styles.address}>{subtitle}</Text> */}
+          </View>
+        </View>
+      </TouchableOpacity>
+    );
+  }
+
+  return (
+    <SafeAreaView style={styles.mainContainer}>
+      <View style={styles.topSection}>
+        <Text
           adjustsFontSizeToFit
           numberOfLines={2}
           style={styles.topSectionText}>
           Faculties of {selectedId.university}
-          </Text>
+        </Text>
       </View>
       <View style={styles.middleSection}>
         <Text style={styles.middleSectionText}>
           Scroll down to find the Faculty of your choice.
         </Text>
       </View>
-        <FlatList
-          data={facultyFilteredData}
-          renderItem={({ item }) => (
-            <Item
-              id={item.id}
-              uni={item.university}
-              faculty={item.faculty}
-              icon={item.icon}
-              selected={!!selected.get(item.items)}
-              onSelect={onSelect}
-            />
-          )}
-          keyExtractor={item => item.id}
-          extraData={selected}
-        />
-      </SafeAreaView>
-    );
+      <FlatList
+        data={facultyFilteredData}
+        renderItem={({ item }) => (
+          <Item
+            id={item.id}
+            uni={item.university}
+            faculty={item.faculty}
+            icon={item.icon}
+            selected={!!selected.get(item.items)}
+            onSelect={onSelect}
+          />
+        )}
+        keyExtractor={item => item.id}
+        extraData={selected}
+      />
+    </SafeAreaView>
+  );
 
 }
 
-// HomeScreen.navigationOptions = {
-//   headerTitle: 'InterPASS',
-//   // headerStyle:{ backgroundColor: '#FFF'},
-//   headerTitleStyle:{ fontSize: 24, marginTop: -35, color: '#FFF', justifyContent: 'center'},
-//   headerStyle: {
-//     backgroundColor: Colors.interPassDarkBlue,
-//   },  
-// };
-
-
-
+// Stylesheet
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     alignItems: 'center',
-   // backgroundColor: '#feb401',
+    // backgroundColor: '#feb401',
     borderColor: '#feaf12',
     borderRadius: 25,
     borderWidth: 1,
@@ -223,26 +223,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
     marginBottom: 5,
-  },
-  address: {
-    // backgroundColor: '#0f1b29',
-    color: '#ccc',
-    fontSize: 14,
-    fontWeight: 'bold',
-    padding: 5,
-    textAlign: 'left',
-  },
-  total: {
-    width: 80,
-  },
-  date: {
-    fontSize: 12,
-    marginBottom: 5,
-  },
-  price: {
-    color: '#1cad61',
-    fontSize: 25,
-    fontWeight: 'bold',
   }
 });
 

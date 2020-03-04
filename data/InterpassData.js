@@ -10,6 +10,7 @@ import KMUTT from '../images/KMUTT.png';
 import Mahidol from '../images/Mahidol.png';
 import Srinakharinwirot from '../images/Srinakharinwirot.png';
 import Silpakorn from '../images/Silpakorn.png';
+import Suranaree from '../images/Suranaree.png';
 
 const DATA = [
   {

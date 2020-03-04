@@ -36,8 +36,8 @@ const MajorsScreen = props => {
 
   // *** Filter to incluce only the Majors for that University
   const filterMajorsByFacultyAndUni = data.filter(
-    uni => uni.university === selectedId.university 
-    && uni.faculty === selectedFacultyId.faculty);
+    uni => uni.university === selectedId.university
+      && uni.faculty === selectedFacultyId.faculty);
   console.log(filterMajorsByFacultyAndUni);
   filterMajorsByFacultyAndUni.map(Uni => {
     console.log('Uni - ' + Uni);
@@ -45,98 +45,95 @@ const MajorsScreen = props => {
 
   });
 
-  console.log('Check Majors Data - ' + majorsData);
+  // Debugging
+  // console.log('Check Majors Data - ' + majorsData);
 
+  // For when the user selects a row
   const [selected, setSelected] = React.useState(new Map());
-  
-    const onSelect = React.useCallback(
-      id => {
-        const newSelected = new Map(selected);
-        newSelected.set(id, !selected.get(id));
-  
-        setSelected(newSelected);
-      },
-      [selected],
-    );
 
-    const Item = itemData => {
+  const onSelect = React.useCallback(
+    id => {
+      const newSelected = new Map(selected);
+      newSelected.set(id, !selected.get(id));
 
-      const { id, major, faculty, round, icon, selected, onSelect, item } = itemData;
+      setSelected(newSelected);
+    },
+    [selected]
+  );
 
-      console.log('Test round pass1 - ' + faculty);
+  // Iterate through the Faculties data one by one, that gets called by the render below
+  const Item = itemData => {
 
-      console.log('Test round pass 2- ' + round);
-
-      console.log('Test round pass 3- ' + major);
-
-
-      return (
-        <TouchableOpacity 
-          style={[
-            styles.item,
-            { backgroundColor: selected ? Colors.interPassBlue : Colors.interPassDarkBlue },
-          ]}
-          onPress={() => {       
-            props.navigation.navigate({routeName: 'Details',
-              params: {
-                selectedItem: item
-              }
-              //onSelect(id)
-            });
-          }}
-          >
-          <View style={styles.row}>
-            <View style={styles.iconContainer}>
-                <Image source={icon} style={styles.icon} />
-            </View>
-            <View style={styles.info}>
-              <Text 
-              style={styles.faculty}>Faculty: {faculty}</Text>
-              <Text style={styles.major}>Major: {major}</Text>
-              <Text style={styles.round}>Round: {round}</Text>
-            </View>
-          </View>
-        </TouchableOpacity>
-      );
-    }
+    const { id, major, faculty, round, icon, selected, onSelect, item } = itemData;
 
     return (
-      <SafeAreaView style={styles.mainContainer}>
-        <View style={styles.topSection}>
-          <Text 
+      <TouchableOpacity
+        style={[
+          styles.item,
+          { backgroundColor: selected ? Colors.interPassBlue : Colors.interPassDarkBlue },
+        ]}
+        onPress={() => {
+          props.navigation.navigate({
+            routeName: 'Details',
+            params: {
+              selectedItem: item
+            }
+            //onSelect(id)
+          });
+        }}
+      >
+        <View style={styles.row}>
+          <View style={styles.iconContainer}>
+            <Image source={icon} style={styles.icon} />
+          </View>
+          <View style={styles.info}>
+            <Text
+              style={styles.faculty}>Faculty: {faculty}</Text>
+            <Text style={styles.major}>Major: {major}</Text>
+            <Text style={styles.round}>Round: {round}</Text>
+          </View>
+        </View>
+      </TouchableOpacity>
+    );
+  }
+
+  return (
+    <SafeAreaView style={styles.mainContainer}>
+      <View style={styles.topSection}>
+        <Text
           adjustsFontSizeToFit
           // numberOfLines={2}
           style={styles.topSectionText}>
           Majors for {selectedId.faculty}
-          </Text>
+        </Text>
       </View>
       <View style={styles.middleSection}>
-      <Text style={styles.middleSectionText}>
-            {selectedId.university}  
+        <Text style={styles.middleSectionText}>
+          {selectedId.university}
         </Text>
         <Text style={styles.middleSectionText}>
           Scroll down to find the Major of your choice.
         </Text>
       </View>
-        <FlatList
-          data={majorsData}
-          renderItem={({ item }) => (
-            <Item
-              id={item.id}
-              faculty={item.faculty}
-              major={item.major}
-              round={item.rounds}
-              icon={item.icon}
-              selected={!!selected.get(item.items)}
-              onSelect={onSelect}
-              item={item}
-            />
-          )}
-          keyExtractor={item => item.id}
-          extraData={selected}
-        />
-      </SafeAreaView>
-    );
+      <FlatList
+        data={majorsData}
+        renderItem={({ item }) => (
+          <Item
+            id={item.id}
+            faculty={item.faculty}
+            major={item.major}
+            round={item.rounds}
+            icon={item.icon}
+            selected={!!selected.get(item.items)}
+            onSelect={onSelect}
+            item={item}
+          />
+        )}
+        keyExtractor={item => item.id}
+        extraData={selected}
+      />
+    </SafeAreaView>
+  );
 
 }
 
@@ -194,7 +191,7 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     alignItems: 'center',
-   // backgroundColor: '#feb401',
+    // backgroundColor: '#feb401',
     borderColor: '#feaf12',
     borderRadius: 25,
     borderWidth: 1,
@@ -243,18 +240,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     padding: 5,
     textAlign: 'left',
-  },
-  total: {
-    width: 80,
-  },
-  date: {
-    fontSize: 12,
-    marginBottom: 5,
-  },
-  price: {
-    color: '#1cad61',
-    fontSize: 25,
-    fontWeight: 'bold',
   }
 });
 

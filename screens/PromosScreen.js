@@ -1,19 +1,25 @@
-import React, { Component, useState }  from 'react';
+/*jshint esversion: 6 */
+
+/* FOR Showing Promotions */
+
+import React, { Component, useState } from 'react';
 import {
-  SafeAreaView,
-  StyleSheet,
-  TouchableOpacity,
-  View,
-  FlatList,
-  Dimensions,
-  Image,
-  Text,
+    SafeAreaView,
+    StyleSheet,
+    TouchableOpacity,
+    View,
+    FlatList,
+    Dimensions,
+    Image,
+    Text,
 } from 'react-native';
 import Colors from '../constants/Colors';
 
+// Promotion image to load.
 const image = require('../images/InterPass-Promo2.jpg');
 
-const {width, height} = Dimensions.get("window");
+// Get the width and height of the device
+const { width, height } = Dimensions.get("window");
 
 
 export default function PromosScreen() {
@@ -22,25 +28,16 @@ export default function PromosScreen() {
             <View style={styles.topSection}>
                 <Text style={styles.topSectionText}>Promotions</Text>
             </View>
-        <View style={styles.imageContainer}>
-          <Image style={styles.image}
-        resizeMode='contain'
-        source={image}
-            />
-        </View>
+            <View style={styles.imageContainer}>
+                <Image style={styles.image}
+                    resizeMode='contain'
+                    source={image}
+                />
+            </View>
 
-        {/**
-         * Go ahead and delete ExpoLinksView and replace it with your content;
-         * we just wanted to provide you with some helpful links.
-         */}
-      </View>
+        </View>
     );
-  }
-  
-//   PromosScreen.navigationOptions = {
-//     title: 'Promotions',
-//   };
-  
+}
 
 const styles = StyleSheet.create({
     mainContainer: {
@@ -122,7 +119,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         height: height,
         width: width - 10,
-            //left: '10%',
+        //left: '10%',
         padding: 5,
         // flex: 1,
         flex: 1,
@@ -130,26 +127,17 @@ const styles = StyleSheet.create({
         left: 0,
         bottom: 0,
         right: 0,
-
-       // marginRight: 20,
     },
     image: {
         position: 'relative',
+        paddingLeft: 20,
 
-        // position: 'relative',
-        // overflow: 'hidden',
-        // //tintColor: '#fff',
-    //     height: null,
-    //     resizeMode: 'contain',
-    //     width: null,
-    paddingLeft: 20,
-
-       paddingRight: 0,
-       flex: 1,
-    // //    resizeMode: 'cover',
-    //            aspectRatio: 0.7,
-    maxHeight: undefined,
-    maxWidth: undefined,
+        paddingRight: 0,
+        flex: 1,
+        // //    resizeMode: 'cover',
+        //            aspectRatio: 0.7,
+        maxHeight: undefined,
+        maxWidth: undefined,
 
     },
     info: {
@@ -162,25 +150,5 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 16,
         marginBottom: 5,
-    },
-    address: {
-        // backgroundColor: '#0f1b29',
-        color: '#ccc',
-        fontSize: 14,
-        fontWeight: 'bold',
-        padding: 5,
-        textAlign: 'left',
-    },
-    total: {
-        width: 80,
-    },
-    date: {
-        fontSize: 12,
-        marginBottom: 5,
-    },
-    price: {
-        color: '#1cad61',
-        fontSize: 25,
-        fontWeight: 'bold',
     }
 });

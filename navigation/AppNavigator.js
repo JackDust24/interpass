@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import React from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
