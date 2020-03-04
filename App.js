@@ -2,14 +2,14 @@ import { AppLoading } from 'expo';
 import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
 import React, { useState } from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { Platform, StatusBar, StyleSheet, View, Text } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useScreens } from 'react-native-screens';
+import { enableScreens } from 'react-native-screens';
 import AppNavigator from './navigation/AppNavigator';
 import Colors from './constants/Colors';
 
 // This is just for helping the performance.
-useScreens();
+enableScreens();
 
 export default function App(props) {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
@@ -20,7 +20,9 @@ export default function App(props) {
         startAsync={loadResourcesAsync}
         onError={handleLoadingError}
         onFinish={() => handleFinishLoading(setLoadingComplete)}
+        
       />
+      
     );
   } else {
     return (
@@ -43,9 +45,9 @@ async function loadResourcesAsync() {
       ...Ionicons.font,
       // We include SpaceMono because we use it in HomeScreen.js. Feel free to
       // remove this if you are not using it in your app
-      'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
-      'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
-      'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf')
+      // 'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+      // 'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
+      // 'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf')
     }),
   ]);
 }

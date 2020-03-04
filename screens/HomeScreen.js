@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import React, { Component, useState }  from 'react';
 import { navigation } from 'react-navigation';
 import {
@@ -13,7 +15,7 @@ import Colors from '../constants/Colors';
 
 import data from '../data/InterpassData.js'; // JSON file includes the data
 /* FOR TESTING PURPOSES
-const basketIcon = require('../images/basket.png');
+const basketIcon = require('../tableHeaderScoress/basket.png');
 const chulaIcon = require('../images/ChulalongkornUniversity-Logo.png');
 let PATH_SEARCH = '../images/'; */
 
@@ -154,13 +156,13 @@ const styles = StyleSheet.create({
   },
   topSection: {
     //flexGrow: 1,
-    height: 50,
+    height: 60,
     backgroundColor: Colors.interPassDarkBlue,
     alignItems: 'flex-start',
   },
   topSectionText: {
     fontWeight: 'bold',
-    marginTop: 20,
+    marginTop: 10,
     marginLeft: 10,
     fontSize: 30,
     color: '#fff',

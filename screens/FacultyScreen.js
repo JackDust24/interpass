@@ -144,7 +144,8 @@ const styles = StyleSheet.create({
   },
   topSection: {
     //flexGrow: 1,
-    height: 100,
+    height: 85,
+    //flex: 1,
     backgroundColor: Colors.interPassDarkBlue,
     alignItems: 'flex-start',
   },
@@ -153,7 +154,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginLeft: 10,
     marginRight: 10,
-    fontSize: 30,
+    fontSize: 24,
     color: '#fff',
   },
   middleSection: {

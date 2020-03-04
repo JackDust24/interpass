@@ -4,8 +4,10 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator, tabBarOptions } from 'react-navigation-tabs';
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
-import StackNavigator from '../navigation/StackNavigator'
+import StackNavigator from '../navigation/StackNavigator';
 import LinksScreen from '../screens/LinksScreen';
+import ContactScreen from '../screens/ContactScreen';
+import PromosScreen from '../screens/PromosScreen';
 import FavouritesScreen from '../screens/FavouritesScreen';
 import FacultyScreen from '../screens/FacultyScreen';
 import MajorsScreen from '../screens/MajorsScreen';
@@ -97,8 +99,8 @@ HomeStack.navigationOptions = {
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+          ? `ios-home${focused ? '' : ''}`
+          : 'md-home'
       }
     />
   ),
@@ -106,12 +108,12 @@ HomeStack.navigationOptions = {
 
 HomeStack.path = '';
 
-const LinksStack = createStackNavigator(
+const ContactStack = createStackNavigator(
   {
-    Links: LinksScreen,
+    Contact: ContactScreen,
   },
   {
-    initialRouteName: 'Links',
+    initialRouteName: 'Contact',
     /* The header config from HomeScreen is now here */
     defaultNavigationOptions: {
       headerStyle: {
@@ -121,26 +123,48 @@ const LinksStack = createStackNavigator(
       headerTitleStyle: {
         fontWeight: 'bold',
       },
+      headerBackground: (
+        <Image
+          style={{width: 180, height: 60, alignItems: "center", justifyContent: "center", position: 'absolute', left: '25%', marginTop: 28}}
+          source={ require('../images/Logo_InterPass-02.png')}
+        />
+      ),
     },
   },
   config
 );
 
-LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+ContactStack.navigationOptions = {
+  tabBarLabel: 'Contact',
+  tabBarOptions: {
+    activeTintColor: '#e91e63',
+    labelStyle: {
+      fontSize: 12,
+    },
+    style: {
+      backgroundColor: Colors.interPassDarkBlue,
+    },
+  },
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-contacts${focused ? '' : ''}`
+          : 'md-contact'
+      }
+    />
   ),
 };
 
-LinksStack.path = '';
+ContactStack.path = '';
 
-const SettingsStack = createStackNavigator(
+const PromosStack = createStackNavigator(
   {
-    Settings: FavouritesScreen,
+    Promos: PromosScreen,
   },
   {
-    initialRouteName: 'Settings',
+    initialRouteName: 'Promos',
     /* The header config from HomeScreen is now here */
     defaultNavigationOptions: {
       headerStyle: {
@@ -150,25 +174,47 @@ const SettingsStack = createStackNavigator(
       headerTitleStyle: {
         fontWeight: 'bold',
       },
+      headerBackground: (
+        <Image
+          style={{width: 180, height: 60, alignItems: "center", justifyContent: "center", position: 'absolute', left: '25%', marginTop: 28}}
+          source={ require('../images/Logo_InterPass-02.png')}
+        />
+      ),
     },
   },
   config
 );
 
-SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+PromosStack.navigationOptions = {
+  tabBarLabel: 'Promos',
+  tabBarOptions: {
+    activeTintColor: '#e91e63',
+    labelStyle: {
+      fontSize: 12,
+    },
+    style: {
+      backgroundColor: Colors.interPassDarkBlue,
+    },
+  },
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'} />
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-pricetag${focused ? '' : ''}`
+          : 'md-pricetag'
+      }
+    />
   ),
 };
 
 
-SettingsStack.path = '';
+PromosStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   HomeStack,
-  LinksStack,
-  SettingsStack,
+  ContactStack,
+  PromosStack,
 });
 
 tabNavigator.tabBarOptions = {

@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import React from 'react';
 import {
   SafeAreaView,
@@ -38,210 +40,12 @@ const MajorsScreen = props => {
     && uni.faculty === selectedFacultyId.faculty);
   console.log(filterMajorsByFacultyAndUni);
   filterMajorsByFacultyAndUni.map(Uni => {
-    console.log('Uni - ' + Uni)
+    console.log('Uni - ' + Uni);
     majorsData.push(Uni);
 
   });
 
-  console.log('Check Majors Data - ' + majorsData)
-
-  // console.log("Majors Array = " + majorsData.university, majorsData.faculty, majorsData.major);
-
-
-  // Now filter array so that if there are more than one round we duplicate this round
-  // 1. Create a loop which is a copy of the rounds.
-  // 2. Map through the majors array and if rounds more than 1, then add this record again.
-
-  var majorsDataWithRounds = [];
-  majorsData.map(Uni => {
-   //  console.log('majorsData - ' + Uni.major, Uni.university)
- 
-    let indexCount = 0;
-
-    var earlyItem = Object.assign({}, Uni);
-    console.log('Check Copy - ' + earlyItem);
-
-    const haveEarlyRound = checkIfRoundDate("earlyRound", earlyItem, Uni.earlyRound, indexCount);
-
-    if (haveEarlyRound) {
-      console.log('There is an early round');
-      indexCount ++;
-      earlyItem.roundType = "Early Round";
-      earlyItem.index = indexCount;
-      earlyItem.roundDate = Uni.earlyRound;
-      majorsDataWithRounds.push(earlyItem);
-      console.log('Check Early - ' + earlyItem.major, 'Index - ' + earlyItem.index, 'Round - ' + earlyItem.roundType, earlyItem.roundDate)
-      // console.log('Check Early MajorsData - ' + (JSON.stringify(majorsDataWithRounds, null, 2)));
-    }
-
-    var round1Item = Object.assign({}, Uni);
-    console.log('Check Copy - ' + round1Item);
-    const haveRound1 = checkIfRoundDate("round1", Uni, Uni.dateRound1, indexCount);
-
-    if (haveRound1) {
-      console.log('There is a round 1');
-      indexCount ++;
-      round1Item.roundType = 'Round 1';
-      round1Item.index = round1Item.id + '-' + indexCount;
-      round1Item.roundDate = Uni.dateRound1;
-      majorsDataWithRounds.push(round1Item);
-
-    }
-
-
-    var round2Item = Object.assign({}, Uni);
-    console.log('Check Copy - ' + round2Item);
-    const haveRound2 = checkIfRoundDate("round2", Uni, Uni.dateRound2, indexCount);
-
-    if (haveRound2) {
-      console.log('There is a round 2')
-      indexCount ++;
-      round2Item.roundType = 'Round 2';
-      round2Item.index = round2Item.id + '-' + indexCount;
-      round2Item.roundDate = Uni.dateRound2;
-      majorsDataWithRounds.push(round2Item);
-      console.log('Check Round 2 - ' + round2Item.major, 'Index - ' + round2Item.index, 'Round - ' + round2Item.roundType, round2Item.roundDate)
-    }
-
-    var round3Item = Object.assign({}, Uni);
-    console.log('Check Copy - ' + round3Item);
-    const haveRound3 = checkIfRoundDate("round3", Uni, Uni.dateRound3, indexCount);
-
-    if (haveRound3) {
-      console.log('There is a Round 3')
-      indexCount ++;
-      round3Item.roundType = 'Round 3';
-      round3Item.index = round3Item.id + '-' + indexCount;
-      round3Item.roundDate = Uni.dateRound3;
-      majorsDataWithRounds.push(round3Item);
-      console.log('Check Round 3 - ' + round3Item.major, 'Index - ' + round3Item.index, 'Round - ' + round3Item.roundType, round3Item.roundDate)
-    }
-
-    var round4Item = Object.assign({}, Uni);
-    console.log('Check Copy - ' + round4Item);
-    const haveRound4 = checkIfRoundDate("round4", Uni, Uni.dateRound4, indexCount);
- 
-    if (haveRound4) {
-      console.log('There is a Round 4')
-      indexCount ++;
-      round4Item.roundType = 'Round 4';
-      round4Item.index = round4Item.id + '-' + indexCount;
-      round4Item.roundDate = Uni.dateRound4;
-      majorsDataWithRounds.push(round4Item);
-    }
-
-    var round5Item = Object.assign({}, Uni);
-    console.log('Check Copy - ' + round5Item);
-    const haveRound5 = checkIfRoundDate("round5", Uni, Uni.dateRound5, indexCount);
-    if (haveRound5) {
-      console.log('There is a Round 5')
-      indexCount ++;
-      round5Item.roundType = 'Round 5';
-      round5Item.index = round5Item.id + '-' + indexCount;
-      round5Item.roundDate = Uni.dateRound5;
-      majorsDataWithRounds.push(round5Item);
-  
-    }
-
-    var round6Item = Object.assign({}, Uni);
-    console.log('Check Copy - ' + round6Item);
-    const haveRound6 = checkIfRoundDate("round6", Uni, Uni.dateRound6, indexCount);
-    if (haveRound6) {
-      console.log('There is a Round 6')
-      indexCount ++;
-      round6Item.roundType = 'Round 6';
-      round6Item.index = round6Item.id + '-' + indexCount;
-      round6Item.roundDate = Uni.dateRound6;
-      majorsDataWithRounds.push(round6Item);
-
-    }
-
-    var round7Item = Object.assign({}, Uni);
-    console.log('Check Copy - ' + round7Item);
-    const haveRound7 = checkIfRoundDate("round7", Uni, Uni.dateRound7, indexCount);
-    if (haveRound7) {
-      console.log('There is a Round 7')
-      indexCount ++;
-      round7Item.roundType = 'Round 7';
-      round7Item.index = round7Item.id + '-' + indexCount;
-      round7Item.roundDate = Uni.dateRound7;
-      majorsDataWithRounds.push(round7Item);
-
-    }
-
-    var round8Item = Object.assign({}, Uni);
-    console.log('Check Copy - ' + round8Item);
-    const haveRound8 = checkIfRoundDate("round8", Uni, Uni.dateRound8, indexCount);
-    if (haveRound8) {
-      console.log('There is a Round 8')
-      indexCount ++;
-      round8Item.roundType = 'Round 8';
-      round8Item.index = round8Item.id + '-' + indexCount;
-      round8Item.roundDate = Uni.dateRound8;
-      majorsDataWithRounds.push(round8Item);
-    }
-    
-  });
-
-  console.log('Check majorsDataWithRounds - ' + (JSON.stringify(majorsDataWithRounds, null, 2)));
-
-  // If has round value we will index this and add the details to the record in the DB.
-  // We have the parameters of the 
-  function checkIfRoundDate(round, Uni, roundValue, indexCount) {
-
-    let roundContainsDate;
-
-    if (roundValue !== "" && typeof roundValue !== "undefined") {
-      roundContainsDate = true;
-      console.log("Contains a Value " + round, roundValue);
-      return true;
-    } else {
-      roundContainsDate = false;
-      console.log("Does not contain a Value " + round, roundValue);
-      return false;
-    }
-
-    // if (roundContainsDate) {
-    //   Uni.index = indexCount;
-    //   Uni.roundDate = roundValue;
-    //   // Uni.index = index;
-    //   console.log("roundContainsDate " + round, roundValue);
-    //   switch(round) {
-    //     case 'earlyRound':
-    //       console.log("earlyRound");
-    //       Uni.roundType = 'Early Round';
-    //       break;
-    //     case 'round1':
-    //       Uni.roundType = 'Round 1';
-    //       break;
-    //     case 'round2':
-    //       Uni.roundType = 'Round 2';
-    //       break;
-    //     case 'round3':
-    //       Uni.roundType = 'Round 3';
-    //       break;
-    //     case 'round4':
-    //       Uni.roundType = 'Round 4';
-    //       break;
-    //     case 'round5':
-    //       Uni.roundType = 'Round 5';
-    //       break;
-    //     case 'round6':
-    //       Uni.roundType = 'Round 6';
-    //     default:
-    //       //console.log("default");
-    //       Uni.roundType = '';
-    //       break;
-    //   }
-    //   return true
-    // }
-    // // Does not contain a value
-    // return false
-  };
-
-  // majorsData.sort
-  // console.log('Check MajorsData - ' + (JSON.stringify(majorsDataWithRounds, null, 2)));
-
+  console.log('Check Majors Data - ' + majorsData);
 
   const [selected, setSelected] = React.useState(new Map());
   
@@ -257,7 +61,7 @@ const MajorsScreen = props => {
 
     const Item = itemData => {
 
-      const { id, major, faculty, round, icon, selected, roundTest, onSelect, item } = itemData;
+      const { id, major, faculty, round, icon, selected, onSelect, item } = itemData;
 
       console.log('Test round pass1 - ' + faculty);
 
@@ -315,21 +119,20 @@ const MajorsScreen = props => {
         </Text>
       </View>
         <FlatList
-          data={majorsDataWithRounds}
+          data={majorsData}
           renderItem={({ item }) => (
             <Item
               id={item.id}
               faculty={item.faculty}
               major={item.major}
-              round={item.roundType}
-              roundTest={item.roundType}
+              round={item.rounds}
               icon={item.icon}
               selected={!!selected.get(item.items)}
               onSelect={onSelect}
               item={item}
             />
           )}
-          keyExtractor={item => item.index}
+          keyExtractor={item => item.id}
           extraData={selected}
         />
       </SafeAreaView>
@@ -344,7 +147,7 @@ const styles = StyleSheet.create({
   },
   topSection: {
     //flexGrow: 1,
-    height: 50,
+    height: 60,
     backgroundColor: Colors.interPassDarkBlue,
     alignItems: 'flex-start',
   },
