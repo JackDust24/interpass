@@ -24,7 +24,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.interpass.interpath"
+    },
+    "android": {
+      "package": "com.interpass.interpath",
+      "permissions" : []
     }
   }
 }

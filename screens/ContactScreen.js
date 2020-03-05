@@ -20,6 +20,9 @@ import Colors from '../constants/Colors';
 
 export default function ContactScreen() {
 
+    // const [url, setUrl] = useState("https://www.messenger.com/t/interpassinstitute");     
+
+
     return (
         <View style={styles.mainContainer}>
             <View style={styles.topSection}>
@@ -27,25 +30,10 @@ export default function ContactScreen() {
             </View>
             <View style={styles.middleSection}>
             {/* <TouchableOpacity> */}
-            <ScrollView>
-                <Text style={styles.middleSectionText}>🔥ฉีกทุกข้อจำกัดการเรียน 🔥</Text>
-                <Text style={styles.middleSectionText}>📣เตรียมพร้อมสำหรับ TCAS ทั้ง INTER และหมอรอบ 1</Text>
-                <Text style={styles.middleSectionText}>🌟New Unlimited Inter Package</Text>
-                <Text style={styles.middleSectionText}>📌 เรียนได้ไม่อั้นทุกคอร์ส ทุกที่ ทุกเวลา</Text>
-                <Text style={styles.middleSectionText}>IELTS / SAT / CU-TEP / TU-GET / BMAT / SAT Subject Test</Text>
-                <Text style={styles.middleSectionText}>>😮 เลือกเรียนได้ตามใจ จัดเต็ม 22 คอร์สทั้ง Inter และหมอ รวมมูลค่าคอร์สเรียน และกิจกรรมกว่า 400,000 บาท</Text>
-                <Text style={styles.middleSectionText}>👍 สะดวกเรียนที่บ้าน หรือที่สาขาก็ได้ สะดวกสบายผ่านระบบ New S.E.L.F.</Text>
-                <Text style={styles.middleSectionText}>😍 เลือก Package ได้เองตามที่ต้องการ พร้อม Service สูงสุด 11 รายการ</Text>
-                <Text></Text>
-                <Text style={styles.middleSectionText}>แพ็กเกจที่ออกแบบมาอย่างดี การันตีความสำเร็จ‼️</Text>
-                <Text style={styles.middleSectionText}>✅SET A : เรียนไม่อั้น 6 เดือน เพียง 26,500.-</Text>
-                <Text style={styles.middleSectionText}>✅SET B : เรียนไม่อั้น 1 ปี เพียง 46,500.-</Text>
-                <Text style={styles.middleSectionText}>✅SET C : เรียนไม่อั้น 3 ปี เพียง 66,500.- มี Personal Coach ดูแล 3 ปีเต็ม ร่วมกันทำ Inter Planner วางแผนการเรียนอย่างมีทิศทาง พร้อมให้คำปรึกษาการทำ Portfolio</Text>
-                <Text></Text>
                 <View>
                     <Text style={styles.contactInfoText}>สอบถามข้อมูลเพิ่มเติมได้ที่</Text>
-                    <Text style={styles.contactInfoText} onPress={()=>Clipboard.setString('Interpass ทุกสาขา')}>🏢 : Interpass ทุกสาขา</Text>
-                    <Text style={styles.contactInfoText} onPress={()=>Clipboard.setString('m.me/interpassinstitute')}>📤 : m.me/interpassinstitute</Text>
+                    <Text style={styles.contactInfoText} onPress={()=>Clipboard.setString('Interpass Siam Soi 10 / Phayathai')}>🏢 : Interpass Siam Soi 10 / Phayathai</Text>
+                    <Text style={styles.contactInfoText} onPress={() => Linking.openURL("https://www.messenger.com/t/interpassinstitute")}>📤 : m.me/interpassinstitute</Text>
                     {/* <TouchableOpacity
                      onPress={()=>{this.dialCall(0899964256)}}> */}
                     <Text onPress={()=>{Linking.openURL('tel:0899964256');}} style={styles.contactInfoText}>📞 : 089-9964256</Text>
@@ -54,7 +42,6 @@ export default function ContactScreen() {
                     <Text style={styles.contactInfoText} onPress={()=>Clipboard.setString('@InterPass')}>Line : @InterPass</Text>
                 </View>
                 {/* </TouchableOpacity> */}
-                     </ScrollView>
              </View>
         </View>
 
@@ -90,11 +77,11 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.interPassDarkBlue,
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
-        paddingTop: 10,
+        paddingTop: 100,
     },
     middleSectionText: {
         marginTop: 5,
-        marginLeft: 20,
+        marginLeft: 40,
         fontSize: 12,
         //fontWeight: 'bold',
         color: 'white',

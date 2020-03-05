@@ -14,7 +14,6 @@ import Colors from '../constants/Colors';
 import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
 import SegmentedControlTab from 'react-native-segmented-control-tab';
 
-
 class MajorsDetailsScreen extends Component {
 
   constructor(props) {
@@ -63,28 +62,29 @@ class MajorsDetailsScreen extends Component {
     checkIfScoreNeeded("English", "GPA", selectedItem.min_GPA, selectedItem.rec_GPA);
     checkIfScoreNeeded("English", "IELTS", selectedItem.min_IELTS, selectedItem.rec_IELTS);
     checkIfScoreNeeded("English", "TOEFL", selectedItem.min_TOEFL, selectedItem.rec_TOEFL);
-    checkIfScoreNeeded("English", "CUTEP", selectedItem.min_CUTEP, selectedItem.rec_CUTEP);
-    checkIfScoreNeeded("English", "TUGET", selectedItem.min_TUGET, selectedItem.rec_TUGET);
+    checkIfScoreNeeded("English", "CU-TEP", selectedItem.min_CUTEP, selectedItem.rec_CUTEP);
+    checkIfScoreNeeded("English", "TU-GET", selectedItem.min_TUGET, selectedItem.rec_TUGET);
     checkIfScoreNeeded("English", "O-NET", selectedItem.min_O_NET, selectedItem.rec_O_NET);
     checkIfScoreNeeded("English", "GAT", selectedItem.min_GAT, selectedItem.rec_GAT);
     checkIfScoreNeeded("English", "PAT", selectedItem.min_PAT, selectedItem.rec_PAT);
-    checkIfScoreNeeded("Aptitude Test", "G-SAT EN", selectedItem.min_G_SAT_EN, selectedItem.rec_G_SAT_EN);
-    checkIfScoreNeeded("Aptitude Test", "G-SAT MATH", selectedItem.min_G_SAT_MATH, selectedItem.rec_G_SAT_MATH);
-    checkIfScoreNeeded("Aptitude Test", "G-SAT TOTAL", selectedItem.min_G_SAT_TOTAL, selectedItem.rec_G_SAT_TOTAL);
-    checkIfScoreNeeded("Aptitude Test", "SAT EN", selectedItem.min_SAT_EN, selectedItem.rec_SAT_EN);
+    checkIfScoreNeeded("Aptitude Test", "GSAT ENG", selectedItem.min_G_SAT_EN, selectedItem.rec_G_SAT_EN);
+    checkIfScoreNeeded("Aptitude Test", "GSAT MATH", selectedItem.min_G_SAT_MATH, selectedItem.rec_G_SAT_MATH);
+    checkIfScoreNeeded("Aptitude Test", "GSAT TOTAL", selectedItem.min_G_SAT_TOTAL, selectedItem.rec_G_SAT_TOTAL);
+    checkIfScoreNeeded("Aptitude Test", "SAT ENG", selectedItem.min_SAT_EN, selectedItem.rec_SAT_EN);
     checkIfScoreNeeded("Aptitude Test", "SAT MATH", selectedItem.min_SAT_MATH, selectedItem.rec_SAT_MATH);
     checkIfScoreNeeded("Aptitude Test", "SAT TOTAL", selectedItem.min_SAT_TOTAL, selectedItem.rec_SAT_TOTAL);
-    checkIfScoreNeeded("Aptitude Test", "CU AAT EN", selectedItem.min_CU_AAT_EN, selectedItem.rec_CU_AAT_EN);
-    checkIfScoreNeeded("Aptitude Test", "CU MATH", selectedItem.min_CU_AAT_MATH, selectedItem.rec_CU_AAT_MATH);
-    checkIfScoreNeeded("Aptitude Test", "CU AAT TOTAL", selectedItem.min_CU_AAT_TOTAL, selectedItem.rec_CU_AAT_TOTAL);
+    checkIfScoreNeeded("Aptitude Test", "CU-AAT ENG", selectedItem.min_CU_AAT_EN, selectedItem.rec_CU_AAT_EN);
+    checkIfScoreNeeded("Aptitude Test", "CU-AAT MATH", selectedItem.min_CU_AAT_MATH, selectedItem.rec_CU_AAT_MATH);
+    checkIfScoreNeeded("Aptitude Test", "CU-AAT TOTAL", selectedItem.min_CU_AAT_TOTAL, selectedItem.rec_CU_AAT_TOTAL);
     checkIfScoreNeeded("Aptitude Test", "ACT MATH", selectedItem.min_ACT_MATH, selectedItem.rec_ACT_MATH);
-    checkIfScoreNeeded("Science Proficiency", "MATH_II", selectedItem.min_MATH_II, selectedItem.rec_MATH_II);
-    checkIfScoreNeeded("Science Proficiency", "Physics", selectedItem.min_Physics, selectedItem.rec_Physics);
-    checkIfScoreNeeded("Science Proficiency", "Chemistry", selectedItem.min_Chemistry, selectedItem.rec_Chemistry);
-    checkIfScoreNeeded("Science Proficiency", "Biology", selectedItem.min_Biology, selectedItem.rec_Biology);
+    checkIfScoreNeeded("Science Proficiency", "SAT MATH II", selectedItem.min_MATH_II, selectedItem.rec_MATH_II);
+    checkIfScoreNeeded("Science Proficiency", "SAT Physics", selectedItem.min_Physics, selectedItem.rec_Physics);
+    checkIfScoreNeeded("Science Proficiency", "SAT Chemistry", selectedItem.min_Chemistry, selectedItem.rec_Chemistry);
+    checkIfScoreNeeded("Science Proficiency", "SAT Biology", selectedItem.min_Biology, selectedItem.rec_Biology);
     checkIfScoreNeeded("Science Proficiency", "BMAT Section 1", selectedItem.min_BMAT_Section1, selectedItem.rec_BMAT_Section1);
     checkIfScoreNeeded("Science Proficiency", "BMAT Section 2", selectedItem.min_BMAT_Section2, selectedItem.rec_BMAT_Section2);
     checkIfScoreNeeded("Science Proficiency", "BMAT Section 3", selectedItem.min_BMAT_Section3, selectedItem.rec_BMAT_Section3);
+
 
     // Check if there is a value in the min and recommend scores, if so then add it.
     function checkIfScoreNeeded(type, test, minValue, recValue) {
@@ -106,7 +106,22 @@ class MajorsDetailsScreen extends Component {
       }
     }
 
-    // console.log('Check mainScoresArray - ' + (JSON.stringify(mainScoresArray, null, 2)));
+    //MARK: See if any special exceptions
+    let exception = checkIfException(selectedItem.exceptions);
+    // Check if there is a value in the min and recommend scores, if so then add it.
+    function checkIfException(exception) {
+
+      // Sometimes, there might be a missing minimum score, but a recommended score (and vice versa), so we need to add this.
+      if (exception !== "" && typeof exception !== "undefined" && exception !== null) {
+        // console.log('There is a value');
+        return true;
+
+      } else {
+        return false;
+      }
+    }
+
+    console.log("Check Exception - " + exception);
 
     // MARK:- Creating the data for the tests
     // Create Data for the English Scores tests
@@ -229,6 +244,7 @@ class MajorsDetailsScreen extends Component {
         </View>
         <View style={styles.imageContainer}>
           <Image style={styles.image}
+          resizeMode='contain'
             source={image}
           />
         </View>
@@ -258,9 +274,13 @@ class MajorsDetailsScreen extends Component {
           <ScrollView>
             <View style={styles.adminRequirementsSection}>
               <Text style={styles.adminRequirementsText}> Available Faculty Seats: {selectedItem.availableSeatsFaculty}</Text>
-              <Text style={styles.adminRequirementsSubText}> * Use = Please use the score the University suggests</Text>
+              {exception === true ?
+               <Text style={styles.adminRequirementsExceptionsSubText} adjustsFontSizeToFit>{selectedItem.exceptions}</Text>
+              : null
+              } 
+            <Text style={styles.adminRequirementsSubText}> * Use = Please use the score the University suggests</Text>
             </View>
-            <View style={styles.adminRequirementsSection}>
+            <View style={styles.tableTypeSection}>
               <Text style={styles.tableSectionHeader}> ENGLISH</Text>
             </View>
             {englishTableData.length > 0 ?
@@ -277,10 +297,10 @@ class MajorsDetailsScreen extends Component {
                 </Table>
               </View>
               :
-              <View style={styles.adminRequirementsSection}>
-                <Text style={styles.emptyTable}> NOT NEEDED</Text>
+              <View style={styles.tableTypeSection}>
+              <Text style={styles.emptyTable}> NOT NEEDED</Text>
               </View>}
-            <View style={styles.adminRequirementsSection}>
+              <View style={styles.tableTypeSection}>
               <Text style={styles.tableSectionHeader}> APTITUDE TESTS</Text>
             </View>
             {aptitudeTableData.length > 0 ?
@@ -297,10 +317,10 @@ class MajorsDetailsScreen extends Component {
                 </Table>
               </View>
               :
-              <View style={styles.adminRequirementsSection}>
-                <Text style={styles.emptyTable}> NOT NEEDED</Text>
+              <View style={styles.tableTypeSection}>
+              <Text style={styles.emptyTable}> NOT NEEDED</Text>
               </View>}
-            <View style={styles.adminRequirementsSection}>
+              <View style={styles.tableTypeSection}>
               <Text style={styles.tableSectionHeader}> SCIENCE PROFICIENCY / BMAT</Text>
             </View>
             {scienceTableData.length > 0 ?
@@ -317,8 +337,8 @@ class MajorsDetailsScreen extends Component {
                 </Table>
               </View>
               :
-              <View style={styles.adminRequirementsSection}>
-                <Text style={styles.emptyTable}> NOT NEEDED</Text>
+              <View style={styles.tableTypeSection}>
+              <Text style={styles.emptyTable}> NOT NEEDED</Text>
               </View>}
           </ScrollView>
         )}
@@ -407,7 +427,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.interPassDarkBlue,
     justifyContent: 'center',
     alignItems: 'center',
-    // paddingTop: 10,
+   // paddingTop: 10,
   },
   middleSectionText: {
     //marginTop: 5,
@@ -428,11 +448,11 @@ const styles = StyleSheet.create({
     //paddingTop: -40,
   },
   image: {
-    width: 160,
-    height: 160,
+    width: 140,
+    height: '85%',
     // flex: 1,
     position: 'absolute',
-    left: '30%',
+    left: '35%',
     //marginTop: 40,
   },
   segmentedSection: {
@@ -446,22 +466,32 @@ const styles = StyleSheet.create({
   },
   adminRequirementsSection: {
     //flexGrow: 1,
-    height: 58,
+    height: 80,
     width: '100%',
     backgroundColor: Colors.interPassDarkBlue,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 10,
+   paddingTop: 10,
   },
   adminRequirementsText: {
     // height: 20,  
     color: '#f1f8ff',
     fontSize: 22,
+    lineHeight: 24,
   },
   adminRequirementsSubText: {
     // height: 20,  
-    color: Colors.interPassYellow,
+    color: '#f1f8ff',
     fontSize: 12,
+    lineHeight: 22,
+  },
+  adminRequirementsExceptionsSubText: {
+    // height: 20,  
+    color: Colors.interPassYellow,
+    fontSize: 16,
+    lineHeight: 22,
+    fontWeight: 'bold',
+
   },
   suggestedCourseSection: {
     //flexGrow: 1,
@@ -491,25 +521,35 @@ const styles = StyleSheet.create({
   },
   tableSection: {
     //flexGrow: 1,
-    height: 30,
+    height: 10,
     width: '100%',
     backgroundColor: Colors.interPassDarkBlue,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 10,
+    //paddingTop: 10,
+  },
+  tableTypeSection: {
+    //flexGrow: 1,
+    height: 40,
+    width: '100%',
+    backgroundColor: Colors.interPassDarkBlue,
+    justifyContent: 'center',
+    alignItems: 'center',
+   // paddingTop: 10,
   },
   tableSectionHeader: {
     height: 30,
     paddingTop: 10,
     color: '#f1f8ff',
+    fontWeight: 'bold',
   },
   tableContainer: {
     flex: 1,
     padding: 5,
-    paddingTop: 5,
+   // paddingTop: 5,
     marginLeft: 20,
     marginRight: 20,
-    marginTop: 10,
+   // marginTop: 10,
     backgroundColor: '#fff',
   },
   tableHeaderScores: {
@@ -522,12 +562,13 @@ const styles = StyleSheet.create({
     textAlign: 'center', // <-- the magic
     textAlignVertical: "top",
     flexWrap: 'wrap',
+    fontSize: 13,
   },
   emptyTable: {
     justifyContent: 'center',
     alignItems: 'center',
     color: '#DF342A',
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: 'bold',
   },
   wrapper: { flexDirection: 'row' },

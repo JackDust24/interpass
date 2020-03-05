@@ -38,7 +38,7 @@ const MajorsScreen = props => {
   const filterMajorsByFacultyAndUni = data.filter(
     uni => uni.university === selectedId.university
       && uni.faculty === selectedFacultyId.faculty);
-  console.log(filterMajorsByFacultyAndUni);
+  console.log('filterMajorsByFacultyAndUni = ' + (JSON.stringify(filterMajorsByFacultyAndUni, null, 2)));
   filterMajorsByFacultyAndUni.map(Uni => {
     console.log('Uni - ' + Uni);
     majorsData.push(Uni);
@@ -104,7 +104,7 @@ const MajorsScreen = props => {
           adjustsFontSizeToFit
           // numberOfLines={2}
           style={styles.topSectionText}>
-          Majors for {selectedId.faculty}
+          Majors for {selectedFacultyId.faculty}
         </Text>
       </View>
       <View style={styles.middleSection}>
