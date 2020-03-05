@@ -72,15 +72,16 @@ const styles = StyleSheet.create({
     },
     topSection: {
         //flexGrow: 1,
-        height: 50,
+        height: 60,
         backgroundColor: Colors.interPassDarkBlue,
         alignItems: 'center',
+        paddingTop: 15,
     },
     topSectionText: {
         fontWeight: 'bold',
         marginTop: 10,
         marginLeft: 10,
-        fontSize: 30,
+        fontSize: 24,
         color: '#fff',
     },
     middleSection: {
@@ -94,19 +95,19 @@ const styles = StyleSheet.create({
     middleSectionText: {
         marginTop: 5,
         marginLeft: 20,
-        fontSize: 16,
+        fontSize: 12,
         //fontWeight: 'bold',
         color: 'white',
-        lineHeight: 20,
+        lineHeight: 15,
     },
     contactInfoText: {
         marginTop: 5,
         // marginLeft: 60,
-        fontSize: 20,
+        fontSize: 15,
         // fontWeight: 'bold',
         color: 'white',
-        lineHeight: 20,
-        left: '25%',
+        lineHeight: 18,
+        left: '10%',
     },
     flatListSection: {
         flexGrow: 4,

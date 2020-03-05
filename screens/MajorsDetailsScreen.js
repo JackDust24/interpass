@@ -116,7 +116,7 @@ class MajorsDetailsScreen extends Component {
     //* Separate into different arrays depending on the type:
     const filterByEnglishType = mainScoresArray.filter(
       score => score.type === "English");
-    
+
     filterByEnglishType.map(score => {
       console.log('type added to English - ' + score);
       englishTypeArray.push(score);
@@ -132,7 +132,7 @@ class MajorsDetailsScreen extends Component {
     const filterByAptitudeType = mainScoresArray.filter(
       score => score.type === "Aptitude Test");
 
-      filterByAptitudeType.map(score => {
+    filterByAptitudeType.map(score => {
       console.log('type added to Apptitude - ' + score);
       aptitudeTypeArray.push(score);
       aptitudeTableTitles.push(score.test);
@@ -147,7 +147,7 @@ class MajorsDetailsScreen extends Component {
     const filterByScienceType = mainScoresArray.filter(
       score => score.type === "Science Proficiency");
     // console.log(filterByScienceType);
-   
+
     filterByScienceType.map(score => {
       console.log('type added to Science - ' + score);
       scienceTypeArray.push(score);
@@ -220,7 +220,10 @@ class MajorsDetailsScreen extends Component {
           </Text>
         </View>
         <View style={styles.subTopSection}>
-          <Text style={styles.subTopSectionText}>
+          <Text
+            adjustsFontSizeToFit
+            numberOfLines={2}
+            style={styles.subTopSectionText}>
             Details of {selectedItem.faculty} {selectedItem.major} {selectedItem.roundType}
           </Text>
         </View>
@@ -236,7 +239,7 @@ class MajorsDetailsScreen extends Component {
         </View>
         {/* SEGMENTED SECTION*/}
         <SegmentedControlTab
-          values={['Admission Requirements', 'Dates & Courses']}
+          values={['Admission Req.', 'Dates & Courses']}
           selectedIndex={state.customStyleIndex}
           onTabPress={this.handleCustomIndexSelect}
           borderRadius={0}
@@ -368,21 +371,23 @@ const styles = StyleSheet.create({
   },
   topSection: {
     //flexGrow: 1,
-    height: 60,
+    // flex: 1,
+
+    height: 90,
     backgroundColor: Colors.interPassDarkBlue,
     alignItems: 'flex-start',
+    paddingTop: 30,
   },
   topSectionText: {
     fontWeight: 'bold',
     marginTop: 20,
     marginLeft: 10,
-    marginRight: 10,
-    fontSize: 30,
+    fontSize: 26,
     color: '#fff',
   },
   subTopSection: {
     //flexGrow: 1,
-    height: 60,
+    height: 40,
     backgroundColor: Colors.interPassDarkBlue,
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
@@ -397,7 +402,7 @@ const styles = StyleSheet.create({
   },
   middleSection: {
     //flexGrow: 1,
-    height: 80,
+    height: 40,
     width: '100%',
     backgroundColor: Colors.interPassDarkBlue,
     justifyContent: 'center',
@@ -405,7 +410,8 @@ const styles = StyleSheet.create({
     // paddingTop: 10,
   },
   middleSectionText: {
-    marginTop: 5,
+    //marginTop: 5,
+    marginBottom: 10,
     marginLeft: 10,
     fontSize: 24,
     //fontWeight: 'bold',
@@ -414,20 +420,20 @@ const styles = StyleSheet.create({
 
   },
   imageContainer: {
-    height: 180,
+    height: 160,
     width: '100%',
     backgroundColor: Colors.interPassDarkBlue,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 10,
+    //paddingTop: -40,
   },
   image: {
-    width: '50%',
-    height: '100%',
-    flex: 1,
+    width: 160,
+    height: 160,
+    // flex: 1,
     position: 'absolute',
-    left: '25%',
-    marginTop: 28,
+    left: '30%',
+    //marginTop: 40,
   },
   segmentedSection: {
     //flexGrow: 1,
@@ -450,7 +456,7 @@ const styles = StyleSheet.create({
   adminRequirementsText: {
     // height: 20,  
     color: '#f1f8ff',
-    fontSize: 26,
+    fontSize: 22,
   },
   adminRequirementsSubText: {
     // height: 20,  

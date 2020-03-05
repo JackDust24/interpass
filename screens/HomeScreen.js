@@ -131,12 +131,9 @@ const HomeScreen = (props) => {
 }
 
 // HomeScreen.navigationOptions = {
-//   headerTitle: 'InterPASS',
-//   // headerStyle:{ backgroundColor: '#FFF'},
-//   headerTitleStyle:{ fontSize: 24, marginTop: -35, color: '#FFF', justifyContent: 'center'},
-//   headerStyle: {
-//     backgroundColor: Colors.interPassDarkBlue,
-//   },  
+//   header: {
+//     style: { shadowColor: 'transparent' },
+//   },
 // };
 
 const styles = StyleSheet.create({
@@ -146,15 +143,18 @@ const styles = StyleSheet.create({
   },
   topSection: {
     //flexGrow: 1,
-    height: 60,
+    // flex: 1,
+
+    height: 90,
     backgroundColor: Colors.interPassDarkBlue,
     alignItems: 'flex-start',
+    paddingTop: 30,
   },
   topSectionText: {
     fontWeight: 'bold',
-    marginTop: 10,
+    marginTop: 20,
     marginLeft: 10,
-    fontSize: 30,
+    fontSize: 26,
     color: '#fff',
   },
   middleSection: {
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
   middleSectionText: {
     marginTop: 5,
     marginLeft: 10,
-    fontSize: 16,
+    fontSize: 14,
     //fontWeight: 'bold',
     color: Colors.interPassYellow,
   },
@@ -205,6 +205,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     borderWidth: 1,
     justifyContent: 'center',
+    alignSelf: 'center',
     height: 50,
     width: 50,
   },
@@ -212,6 +213,7 @@ const styles = StyleSheet.create({
     //tintColor: '#fff',
     height: 48,
     width: 48,
+    overflow: "hidden",
   },
   info: {
     flex: 1,

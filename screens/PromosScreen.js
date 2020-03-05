@@ -46,15 +46,16 @@ const styles = StyleSheet.create({
     },
     topSection: {
         //flexGrow: 1,
-        height: 50,
+        height: 60,
         backgroundColor: Colors.interPassDarkBlue,
         alignItems: 'center',
+        paddingTop: 15,
     },
     topSectionText: {
         fontWeight: 'bold',
         marginTop: 10,
         marginLeft: 10,
-        fontSize: 30,
+        fontSize: 24,
         color: '#fff',
     },
     middleSection: {

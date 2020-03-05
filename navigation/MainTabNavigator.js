@@ -19,7 +19,7 @@ import InterPassLogo from '../images/Logo_InterPass-02.png';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
-  default: {},
+ default: {},
 });
 
 const HomeStack = createStackNavigator(
@@ -47,12 +47,18 @@ const HomeStack = createStackNavigator(
       ),
       headerStyle: {
         backgroundColor: Colors.interPassDarkBlue,
+        borderBottomWidth: 0,
+        paddingTop: 20,
       },
-      headerTintColor: '#fff',
+      // headerTintColor: '#fff',
       headerTitleStyle: {
         fontWeight: 'bold',
       },
       headerBackTitle: 'Back',
+      // headerBackTitleStyle: {
+      //   paddingTop: 20,
+      // },
+      
     },
   },
 
@@ -69,6 +75,9 @@ const HomeStack = createStackNavigator(
 );
 
 HomeStack.navigationOptions = {
+  // header: {
+  //   style: { shadowColor: 'transparent' },
+  // },
   tabBarLabel: 'Home',
   tabBarOptions: {
     activeTintColor: '#e91e63',
@@ -103,10 +112,12 @@ const ContactStack = createStackNavigator(
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: Colors.interPassDarkBlue,
+        borderBottomWidth: 0,
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
         fontWeight: 'bold',
+
       },
       headerBackground: (
         <Image
@@ -154,6 +165,7 @@ const PromosStack = createStackNavigator(
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: Colors.interPassDarkBlue,
+        borderBottomWidth: 0,
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
