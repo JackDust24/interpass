@@ -25,10 +25,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.interpass.interpath"
+      "bundleIdentifier": "com.interpassjason.interpath"
     },
     "android": {
-      "package": "com.interpass.interpath",
+      "package": "com.interpassjason.interpath",
       "permissions" : []
     }
   }
