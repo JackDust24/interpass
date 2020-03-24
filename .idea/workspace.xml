@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="138b79a6-85dc-449e-ac01-12924b4fc948" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/MajorsDetailsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/MajorsDetailsScreen.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +25,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -65,7 +66,7 @@
     <frame x="22" y="23" width="1257" height="751" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33415636" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3399177" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />

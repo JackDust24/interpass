@@ -184,12 +184,21 @@ class MajorsDetailsScreen extends Component {
     } else if ((englishTableData.length > 0) && (scienceTableData.length > 0)) {
       console.log('IF 3');
       image = require('../images/English-Science-icon-clear.png');
+    } else if ((scienceTableData.length > 0) && (aptitudeTableData.length > 0)) {
+      console.log('IF 4');
+      image = require('../images/Aptitude-Science-icon-clear.png');
     } else if (englishTableData.length > 0) {
       console.log('IF 4');
       image = require('../images/English-icon-clear.png');
+    } else if (aptitudeTableData.length > 0) {
+      console.log('IF 4');
+      image = require('../images/Aptitude-icon-clear.png');
+    }  else if (scienceTableData.length > 0) {
+      console.log('IF 4');
+      image = require('../images/Science-icon-clear.png');
     } else {
-      console.log('IF 5');
-      image = require('../images/English-icon-clear.png');
+      console.log('Not any of the above - SHOULD NOT HAPPEN');
+      image = require('../images/English-Apt-Science-icon-clear.png');
     }
 
     // MARK:- Collecting the Rounds Information
@@ -236,10 +245,10 @@ class MajorsDetailsScreen extends Component {
         </View>
         <View style={styles.subTopSection}>
           <Text
-            adjustsFontSizeToFit
-            numberOfLines={2}
+            // adjustsFontSizeToFit
+            // numberOfLines={2}
             style={styles.subTopSectionText}>
-            Details of {selectedItem.faculty} {selectedItem.major} {selectedItem.roundType}
+            Details of {selectedItem.faculty} faculty for majors - {selectedItem.major}
           </Text>
         </View>
         <View style={styles.imageContainer}>
@@ -407,15 +416,18 @@ const styles = StyleSheet.create({
   },
   subTopSection: {
     //flexGrow: 1,
-    height: 40,
+   //a height: 40,
     backgroundColor: Colors.interPassDarkBlue,
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     paddingTop: 10,
+    flexWrap: "wrap",
+
   },
   subTopSectionText: {
     marginTop: 5,
     marginLeft: 10,
+    marginRight: 10,
     fontSize: 16,
     //fontWeight: 'bold',
     color: Colors.interPassYellow,
@@ -432,7 +444,8 @@ const styles = StyleSheet.create({
   middleSectionText: {
     //marginTop: 5,
     marginBottom: 10,
-    marginLeft: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
     fontSize: 24,
     //fontWeight: 'bold',
     color: Colors.interPassYellow,
@@ -445,18 +458,14 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.interPassDarkBlue,
     justifyContent: 'center',
     alignItems: 'center',
-    //paddingTop: -40,
   },
   image: {
     width: 140,
     height: '85%',
-    // flex: 1,
     position: 'absolute',
     left: '35%',
-    //marginTop: 40,
   },
   segmentedSection: {
-    //flexGrow: 1,
     height: 30,
     width: '100%',
     backgroundColor: Colors.interPassDarkBlue,
@@ -466,12 +475,15 @@ const styles = StyleSheet.create({
   },
   adminRequirementsSection: {
     //flexGrow: 1,
-    height: 80,
+    //height: 80,
     width: '100%',
     backgroundColor: Colors.interPassDarkBlue,
     justifyContent: 'center',
     alignItems: 'center',
-   paddingTop: 10,
+    paddingTop: 10,
+    margin: 10,
+    //flexWrap: 'wrap',
+    alignSelf: "center",
   },
   adminRequirementsText: {
     // height: 20,  
@@ -488,10 +500,13 @@ const styles = StyleSheet.create({
   adminRequirementsExceptionsSubText: {
     // height: 20,  
     color: Colors.interPassYellow,
-    fontSize: 16,
+    fontSize: 13,
     lineHeight: 22,
     fontWeight: 'bold',
-
+    justifyContent: 'center',
+    alignSelf: "center",
+    paddingLeft: 10,
+    paddingRight: 10,
   },
   suggestedCourseSection: {
     //flexGrow: 1,

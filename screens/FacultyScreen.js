@@ -105,8 +105,8 @@ const FacultyScreen = props => {
     <SafeAreaView style={styles.mainContainer}>
       <View style={styles.topSection}>
         <Text
-          adjustsFontSizeToFit
-          numberOfLines={2}
+          // adjustsFontSizeToFit
+          // numberOfLines={2}
           style={styles.topSectionText}>
           Faculties of {selectedId.university}
         </Text>
@@ -146,16 +146,17 @@ const styles = StyleSheet.create({
     //flexGrow: 1,
     // flex: 1,
 
-    height: 90,
+   // height: 90,
     backgroundColor: Colors.interPassDarkBlue,
     alignItems: 'flex-start',
     paddingTop: 30,
+    flexWrap: "wrap",
   },
   topSectionText: {
     fontWeight: 'bold',
     marginTop: 20,
     marginLeft: 10,
-    fontSize: 26,
+    fontSize: 22,
     color: '#fff',
   },
   middleSection: {

@@ -42,7 +42,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group",
+    "exceptions": "* Choose only one test from each group",
     "min_GPA": "",
     "min_IELTS": "6.5",
     "min_TOEFL": "79",
@@ -93,7 +93,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET and Speaking CU-TEP\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. InterWriting\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET and Speaking CU-TEP\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. InterWriting\n10. Portfolio & Interview"
   },
   {
     "id": "IP002",
@@ -124,7 +124,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or SAT Eng.,\nChoose between SAT Math or SAT Math ll.",
+    "exceptions": "* Choose between English group or SAT Eng. \n* Choose between SAT Math or SAT Math ll.",
     "min_GPA": "3.50",
     "min_IELTS": "6.5",
     "min_TOEFL": "83",
@@ -175,7 +175,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET and Speaking CU-TEP\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET and Speaking CU-TEP\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
   },
   {
     "id": "IP003",
@@ -206,7 +206,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group",
+    "exceptions": "* Choose only one test from each group",
     "min_GPA": "",
     "min_IELTS": "7.0",
     "min_TOEFL": "95",
@@ -257,7 +257,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Inter Writing\n7. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Inter Writing\n7. Portfolio & Interview"
   },
   {
     "id": "IP004",
@@ -288,7 +288,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group",
+    "exceptions": "* Choose only one test from each group",
     "min_GPA": "",
     "min_IELTS": "",
     "min_TOEFL": "",
@@ -370,7 +370,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group., \nChoose between English group or SAT Eng",
+    "exceptions": "* Choose only one test from each group. \n* Choose between English group or SAT Eng",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "79",
@@ -421,7 +421,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET \n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET \n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
   },
   {
     "id": "IP006",
@@ -452,7 +452,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,\nChoose only one test from each group",
+    "exceptions": "* Choose between English group or sat eng.\n* Choose only one test from each group",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "79",
@@ -503,7 +503,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET \n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET \n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
   },
   {
     "id": "IP007",
@@ -534,7 +534,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group",
+    "exceptions": "* Choose only one test from each group",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "80",
@@ -585,7 +585,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Math\n8. SAT Subject Test Physics\n9. SAT Subject Test Chemistry\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Math\n8. SAT Subject Test Physics\n9. SAT Subject Test Chemistry\n10. Portfolio & Interview"
   },
   {
     "id": "IP008",
@@ -616,7 +616,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group",
+    "exceptions": "* Choose only one test from each group",
     "min_GPA": "3.00",
     "min_IELTS": "6.5",
     "min_TOEFL": "88",
@@ -667,7 +667,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
   },
   {
     "id": "IP009",
@@ -698,7 +698,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,\nChoose between sat math or sat subject test math ll.",
+    "exceptions": "* Choose between English group or sat eng.\n* Choose between sat math or sat subject test math ll.",
     "min_GPA": "",
     "min_IELTS": "6.5",
     "min_TOEFL": "80",
@@ -749,7 +749,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or \nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or \nAdv. CU-TEP/TU-GET or\nAdv. SAT Eng\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or Adv. SAT Eng\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. Portfolio & Interview"
   },
   {
     "id": "IP010",
@@ -780,7 +780,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group, \nChoose between sat math or sat subject test math ll.",
+    "exceptions": "* Choose only one test from each group, \n* Choose between sat math or sat subject test math ll.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "79",
@@ -831,7 +831,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or \nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or \nAdv. CU-TEP/TU-GET or\nAdv. SAT Eng\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Chemistry\n8. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or Adv. SAT Eng\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Chemistry\n8. Portfolio & Interview"
   },
   {
     "id": "IP011",
@@ -862,7 +862,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group",
+    "exceptions": "* Choose only one test from each group",
     "min_GPA": "3.00",
     "min_IELTS": "6.5",
     "min_TOEFL": "87",
@@ -944,7 +944,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,\nChoose between sat math or sat subject test math ll.",
+    "exceptions": "* Choose between English group or sat eng.\n* Choose between sat math or sat subject test math ll.",
     "min_GPA": "2.75",
     "min_IELTS": "6.0",
     "min_TOEFL": "79",
@@ -995,7 +995,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or \nCU-TEP/TU-GET\n3. Adv. IELTS All in one or \nAdv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. SAT Subject Test Math\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. SAT Subject Test Math\n10. Portfolio & Interview"
   },
   {
     "id": "IP013",
@@ -1026,7 +1026,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group",
+    "exceptions": "* Choose only one test from each group",
     "min_GPA": "3.50",
     "min_IELTS": "7.0",
     "min_TOEFL": "",
@@ -1077,7 +1077,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET and Speaking CU-TEP\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET and Speaking CU-TEP\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
   },
   {
     "id": "IP014",
@@ -1108,7 +1108,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group",
+    "exceptions": "* Choose only one test from each group",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "80",
@@ -1190,7 +1190,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,\nChoose between sat math or sat subject test math ll.",
+    "exceptions": "* Choose between English group or sat eng.\n* Choose between sat math or sat subject test math ll.",
     "min_GPA": "",
     "min_IELTS": "6.5",
     "min_TOEFL": "80",
@@ -1241,7 +1241,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nAdv. SAT Eng\n4. Pre SAT Math\n5. SAT Math or\nSAT Subject Test Math II\n6. Adv. SAT Math or\nSAT Subject Test Math II\n7. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or Adv. SAT Eng\n4. Pre SAT Math\n5. SAT Math or SAT Subject Test Math II\n6. Adv. SAT Math or SAT Subject Test Math II\n7. Portfolio & Interview"
   },
   {
     "id": "IP016",
@@ -1272,7 +1272,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,",
+    "exceptions": "* Choose between English group or sat eng.",
     "min_GPA": "3.75",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -1323,7 +1323,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1.Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nSAT Eng\n4. InterWriting\n5. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or SAT Eng\n4. InterWriting\n5. Portfolio & Interview"
   },
   {
     "id": "IP017",
@@ -1354,7 +1354,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group",
+    "exceptions": "* Choose only one test from each group",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -1405,7 +1405,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. InterWriting\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. InterWriting\n10. Portfolio & Interview"
   },
   {
     "id": "IP018",
@@ -1436,7 +1436,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,",
+    "exceptions": "* Choose between English group or sat eng.",
     "min_GPA": "3.00",
     "min_IELTS": "6.5",
     "min_TOEFL": "79",
@@ -1487,7 +1487,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nAdv. SAT Eng\n4. InterWriting\n5. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or Adv. SAT Eng\n4. InterWriting\n5. Portfolio & Interview"
   },
   {
     "id": "IP019",
@@ -1518,7 +1518,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,",
+    "exceptions": "* Choose between English group or sat eng.",
     "min_GPA": "3.00",
     "min_IELTS": "6.5",
     "min_TOEFL": "80",
@@ -1569,7 +1569,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nSAT Eng\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or SAT Eng\n4. Portfolio & Interview"
   },
   {
     "id": "IP020",
@@ -1600,7 +1600,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,",
+    "exceptions": "* Choose between English group or sat eng.",
     "min_GPA": "3.00",
     "min_IELTS": "6.5",
     "min_TOEFL": "80",
@@ -1651,7 +1651,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nSAT Eng\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or SAT Eng\n4. Portfolio & Interview"
   },
   {
     "id": "IP021",
@@ -1682,7 +1682,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,",
+    "exceptions": "* Choose between English group or sat eng.",
     "min_GPA": "2.75",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -1733,7 +1733,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nSAT Eng\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or SAT Eng\n4. Portfolio & Interview"
   },
   {
     "id": "IP022",
@@ -1764,7 +1764,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.00",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -1815,7 +1815,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. Portfolio & Interview"
   },
   {
     "id": "IP023",
@@ -1846,7 +1846,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -1897,7 +1897,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter \n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nAdv. SAT Eng\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter \n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or Adv. SAT Eng\n4. Portfolio & Interview"
   },
   {
     "id": "IP024",
@@ -1928,7 +1928,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.00",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -1979,7 +1979,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. Portfolio & Interview"
   },
   {
     "id": "IP025",
@@ -2010,7 +2010,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.,\nChoose between sat math or sat subject test math ll.",
+    "exceptions": "* Choose only one test from each group.\n* Choose between sat math or sat subject test math ll.",
     "min_GPA": "3.00",
     "min_IELTS": "5.0",
     "min_TOEFL": "45",
@@ -2061,7 +2061,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. Portfolio & Interview"
   },
   {
     "id": "IP026",
@@ -2092,7 +2092,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,",
+    "exceptions": "* Choose between English group or sat eng.",
     "min_GPA": "3.00",
     "min_IELTS": "5.0",
     "min_TOEFL": "45",
@@ -2143,7 +2143,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nAdv. SAT Eng\n4. SAT Subject Test Math II\n5. SAT Subject Test Physics or\nSAT Subject Test Chemistry\n6. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or Adv. SAT Eng\n4. SAT Subject Test Math II\n5. SAT Subject Test Physics or SAT Subject Test Chemistry\n6. Portfolio & Interview"
   },
   {
     "id": "IP027",
@@ -2174,7 +2174,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,\nChoose between sat subject test physics or sat subject test chemistry.",
+    "exceptions": "* Choose between English group or sat eng.\n* Choose between sat subject test physics or sat subject test chemistry.",
     "min_GPA": "3.00",
     "min_IELTS": "5.0",
     "min_TOEFL": "45",
@@ -2225,7 +2225,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nAdv. SAT Eng\n4. SAT Subject Test Math II\n5. SAT Subject Test Physics or\nSAT Subject Test Chemistry\n6. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or Adv. SAT Eng\n4. SAT Subject Test Math II\n5. SAT Subject Test Physics or SAT Subject Test Chemistry\n6. Portfolio & Interview"
   },
   {
     "id": "IP028",
@@ -2256,7 +2256,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,\nChoose between sat subject test physics or sat subject test chemistry.",
+    "exceptions": "* Choose between English group or sat eng.\n* Choose between sat subject test physics or sat subject test chemistry.",
     "min_GPA": "3.00",
     "min_IELTS": "5.0",
     "min_TOEFL": "45",
@@ -2307,7 +2307,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET or\nAdv. SAT Eng\n4. SAT Subject Test Math II\n5. SAT Subject Test Physics or\nSAT Subject Test Chemistry\n6. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET or Adv. SAT Eng\n4. SAT Subject Test Math II\n5. SAT Subject Test Physics or SAT Subject Test Chemistry\n6. Portfolio & Interview"
   },
   {
     "id": "IP029",
@@ -2338,7 +2338,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between Aptitude Test group orScience Proficiency group.",
+    "exceptions": "* Choose between Aptitude Test group orScience Proficiency group.",
     "min_GPA": "2.75",
     "min_IELTS": "",
     "min_TOEFL": "",
@@ -2420,7 +2420,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between Aptitude Test group orScience Proficiency group.",
+    "exceptions": "* Choose between Aptitude Test group orScience Proficiency group.",
     "min_GPA": "2.75",
     "min_IELTS": "",
     "min_TOEFL": "",
@@ -2502,7 +2502,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between Aptitude Test group or Science Proficiency group.",
+    "exceptions": "* Choose between Aptitude Test group or Science Proficiency group.",
     "min_GPA": "2.75",
     "min_IELTS": "",
     "min_TOEFL": "",
@@ -2584,7 +2584,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -2666,7 +2666,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -2748,7 +2748,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -2830,7 +2830,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "6.5",
     "min_TOEFL": "",
@@ -2881,7 +2881,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET and \n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET and \n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
   },
   {
     "id": "IP036",
@@ -2912,7 +2912,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "69",
@@ -2994,7 +2994,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "69",
@@ -3076,7 +3076,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "69",
@@ -3158,7 +3158,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "69",
@@ -3240,7 +3240,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "69",
@@ -3322,7 +3322,7 @@ const DATA = [
     "dateRound7Seats": 50,
     "dateRound8": "9-25 June 2020",
     "dateRound8Seats": 50,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "60",
@@ -3404,7 +3404,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -3486,7 +3486,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "61",
@@ -3568,7 +3568,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.50",
     "min_IELTS": "6.5",
     "min_TOEFL": "",
@@ -3650,7 +3650,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.50",
     "min_IELTS": "6.5",
     "min_TOEFL": "",
@@ -3732,7 +3732,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.00",
     "min_IELTS": "7.0",
     "min_TOEFL": "",
@@ -3814,7 +3814,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.\nChoose between Aptitude Test group or GPA.",
+    "exceptions": "* Choose only one test from each group.\n* Choose between Aptitude Test group or GPA.",
     "min_GPA": "3.0",
     "min_IELTS": "6.0",
     "min_TOEFL": "79",
@@ -3896,7 +3896,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.\nChoose between Aptitude Test group or GPA.",
+    "exceptions": "* Choose only one test from each group.\n* Choose between Aptitude Test group or GPA.",
     "min_GPA": "3.0",
     "min_IELTS": "6.0",
     "min_TOEFL": "79",
@@ -3978,7 +3978,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.5",
     "min_IELTS": "USE",
     "min_TOEFL": "USE",
@@ -4029,7 +4029,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or \nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv.CU-TEP/TU-GET\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv.CU-TEP/TU-GET\n4. Portfolio & Interview"
   },
   {
     "id": "IP050",
@@ -4060,7 +4060,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.75",
     "min_IELTS": "5.5",
     "min_TOEFL": "65",
@@ -4111,7 +4111,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or \nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv.CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
+    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or  CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv.CU-TEP/TU-GET\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. Portfolio & Interview"
   },
   {
     "id": "IP051",
@@ -4142,7 +4142,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.\nChoose between Aptitude Test group or Science Proficiency group or GPA.",
+    "exceptions": "* Choose only one test from each group.\n* Choose between Aptitude Test group or Science Proficiency group or GPA.",
     "min_GPA": "2.5",
     "min_IELTS": "USE",
     "min_TOEFL": "USE",
@@ -4193,7 +4193,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or \nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv.CU-TEP/TU-GET\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Math II\n8. Portfolio & Interview"
+    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv.CU-TEP/TU-GET\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Math II\n8. Portfolio & Interview"
   },
   {
     "id": "IP052",
@@ -4224,7 +4224,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.,\nChoose between sat math or sat subject test math ll.",
+    "exceptions": "* Choose only one test from each group.\n* Choose between sat math or sat subject test math ll.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "79",
@@ -4275,7 +4275,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or \nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv.CU-TEP/TU-GET\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Math II\n8. SAT Subject Test Physics\n9. Portfolio & Interview"
+    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv.CU-TEP/TU-GET\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Math II\n8. SAT Subject Test Physics\n9. Portfolio & Interview"
   },
   {
     "id": "IP053",
@@ -4306,7 +4306,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.,\nChoose between sat math or sat subject test math ll.",
+    "exceptions": "* Choose only one test from each group.\n* Choose between sat math or sat subject test math ll.",
     "min_GPA": "",
     "min_IELTS": "6.0",
     "min_TOEFL": "79",
@@ -4357,7 +4357,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or \nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv.CU-TEP/TU-GET\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Math II\n8. Portfolio & Interview"
+    "suggestedCourses": "1. Pre inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv.CU-TEP/TU-GET\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. SAT Subject Test Math II\n8. Portfolio & Interview"
   },
   {
     "id": "IP054",
@@ -4388,7 +4388,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.\nChoose between Aptitude Test group or GPA.",
+    "exceptions": "* Choose only one test from each group.\n* Choose between Aptitude Test group or GPA.",
     "min_GPA": "3.00",
     "min_IELTS": "6.0",
     "min_TOEFL": "79",
@@ -4470,7 +4470,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "Not specified",
     "min_IELTS": "7.0",
     "min_TOEFL": "",
@@ -4521,7 +4521,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET \n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET \n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
   },
   {
     "id": "IP056",
@@ -4552,7 +4552,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "78",
@@ -4634,7 +4634,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "70",
@@ -4716,7 +4716,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.,\nChoose only one test from each group.",
+    "exceptions": "* Choose between English group or sat eng.\n* Choose only one test from each group.",
     "min_GPA": "2.25",
     "min_IELTS": "5.0",
     "min_TOEFL": "62",
@@ -4767,7 +4767,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre inter \n2. IELTS All in one or\nCU-TEP/TU-GET or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. CU-TEP or\nAdv. SAT Eng\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. Portfolio & Interview"
+    "suggestedCourses": "1. Pre inter \n2. IELTS All in one or CU-TEP/TU-GET or SAT Eng\n3. Adv. IELTS All in one or Adv. CU-TEP or Adv. SAT Eng\n4. Pre SAT Math\n5. SAT Math\n6. Adv. SAT Math\n7. Portfolio & Interview"
   },
   {
     "id": "IP059",
@@ -4798,7 +4798,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "65",
@@ -4880,7 +4880,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.5",
     "min_TOEFL": "61",
@@ -4962,7 +4962,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.,\nChoose between sat math or sat subject test math ll.",
+    "exceptions": "* Choose only one test from each group.\n* Choose between sat math or sat subject test math ll.",
     "min_GPA": "",
     "min_IELTS": "5.5",
     "min_TOEFL": "78",
@@ -5013,7 +5013,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one\n3. Adv. IELTS All in one\n4. Pre SAT Math\n5. SAT Math or\nSAT Subject Test Math II\n6. Adv. SAT Math or\nSAT Subject Test Math II\n7. SAT Subject Test Physics\n8. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one\n3. Adv. IELTS All in one\n4. Pre SAT Math\n5. SAT Math or SAT Subject Test Math II\n6. Adv. SAT Math or SAT Subject Test Math II\n7. SAT Subject Test Physics\n8. Portfolio & Interview"
   },
   {
     "id": "IP062",
@@ -5044,7 +5044,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.,\nChoose between sat math or GPA.",
+    "exceptions": "* Choose only one test from each group.\n* Choose between sat math or GPA.",
     "min_GPA": "2.50",
     "min_IELTS": "5.5",
     "min_TOEFL": "61",
@@ -5095,7 +5095,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET \n4. Pre SAT Math\n5. SAT Math \n6. Adv. SAT Math\n7. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET \n4. Pre SAT Math\n5. SAT Math \n6. Adv. SAT Math\n7. Portfolio & Interview"
   },
   {
     "id": "IP063",
@@ -5126,7 +5126,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.00",
     "min_IELTS": "4.0",
     "min_TOEFL": "52",
@@ -5208,7 +5208,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "4.0",
     "min_TOEFL": "43",
@@ -5259,7 +5259,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET \n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET \n4. Portfolio & Interview"
   },
   {
     "id": "IP065",
@@ -5290,7 +5290,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "4.0",
     "min_TOEFL": "43",
@@ -5372,7 +5372,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.75",
     "min_IELTS": "",
     "min_TOEFL": "",
@@ -5454,7 +5454,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "USE",
     "min_IELTS": "4.5",
     "min_TOEFL": "53",
@@ -5505,7 +5505,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. Portfolio & Interview"
   },
   {
     "id": "IP068",
@@ -5536,7 +5536,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.00",
     "min_IELTS": "USE",
     "min_TOEFL": "",
@@ -5587,7 +5587,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET\n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET\n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. Portfolio & Interview"
   },
   {
     "id": "IP069",
@@ -5618,7 +5618,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.00",
     "min_IELTS": "5.0",
     "min_TOEFL": "65",
@@ -5700,7 +5700,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.00",
     "min_IELTS": "5.0",
     "min_TOEFL": "65",
@@ -5782,7 +5782,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "61",
@@ -5864,7 +5864,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "",
     "min_IELTS": "",
     "min_TOEFL": "",
@@ -5946,7 +5946,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.00",
     "min_IELTS": "5.0",
     "min_TOEFL": "",
@@ -5997,7 +5997,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET \n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET \n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
   },
   {
     "id": "IP074",
@@ -6028,7 +6028,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.00",
     "min_IELTS": "5.0",
     "min_TOEFL": "",
@@ -6079,7 +6079,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET \n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET \n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
   },
   {
     "id": "IP075",
@@ -6110,7 +6110,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "61",
@@ -6192,7 +6192,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "61",
@@ -6274,7 +6274,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "USE",
     "min_IELTS": "5.5",
     "min_TOEFL": "70",
@@ -6356,7 +6356,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "61",
@@ -6438,7 +6438,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.75",
     "min_IELTS": "5.5",
     "min_TOEFL": "70",
@@ -6520,7 +6520,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "USE",
     "min_IELTS": "5.0",
     "min_TOEFL": "61",
@@ -6571,7 +6571,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one\n3. Adv. IELTS All in one\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. SAT Subject Test Math II\n10. SAT Subject Test Physics or\nSAT Subject Test Chemistry or\nSAT Subject Test Biology\n11. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one\n3. Adv. IELTS All in one\n4. SAT Eng\n5. Adv. SAT Eng\n6. Pre SAT Math\n7. SAT Math\n8. Adv. SAT Math\n9. SAT Subject Test Math II\n10. SAT Subject Test Physics or SAT Subject Test Chemistry or SAT Subject Test Biology\n11. Portfolio & Interview"
   },
   {
     "id": "IP081",
@@ -6602,7 +6602,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "61",
@@ -6684,7 +6684,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "USE",
     "min_IELTS": "4.5",
     "min_TOEFL": "52",
@@ -6766,7 +6766,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "61",
@@ -6848,7 +6848,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.5",
     "min_TOEFL": "70",
@@ -6930,7 +6930,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "USE",
     "min_IELTS": "5.0",
     "min_TOEFL": "61",
@@ -7012,7 +7012,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.50",
     "min_IELTS": "6.5",
     "min_TOEFL": "",
@@ -7094,7 +7094,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "2.50",
     "min_IELTS": "4.5",
     "min_TOEFL": "53",
@@ -7176,7 +7176,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or Aptitude Test group.",
+    "exceptions": "* Choose between English group or Aptitude Test group.",
     "min_GPA": "2.75",
     "min_IELTS": "5.0",
     "min_TOEFL": "",
@@ -7258,7 +7258,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or Aptitude Test group.",
+    "exceptions": "* Choose between English group or Aptitude Test group.",
     "min_GPA": "2.75",
     "min_IELTS": "5.0",
     "min_TOEFL": "",
@@ -7340,7 +7340,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or Aptitude Test group.",
+    "exceptions": "* Choose between English group or Aptitude Test group.",
     "min_GPA": "2.75",
     "min_IELTS": "5.0",
     "min_TOEFL": "",
@@ -7422,7 +7422,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or Aptitude Test group.",
+    "exceptions": "* Choose between English group or Aptitude Test group.",
     "min_GPA": "2.50",
     "min_IELTS": "5.0",
     "min_TOEFL": "61",
@@ -7473,7 +7473,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nSAT Eng\n3. Adv. IELTS All in one or\nAdv. SAT Eng\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or SAT Eng\n3. Adv. IELTS All in one or Adv. SAT Eng\n4. Portfolio & Interview"
   },
   {
     "id": "IP092",
@@ -7504,7 +7504,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or Aptitude Test group.",
+    "exceptions": "* Choose between English group or Aptitude Test group.",
     "min_GPA": "2.75",
     "min_IELTS": "5.0",
     "min_TOEFL": "55",
@@ -7586,7 +7586,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or Aptitude Test group.",
+    "exceptions": "* Choose between English group or Aptitude Test group.",
     "min_GPA": "2.00",
     "min_IELTS": "USE",
     "min_TOEFL": "USE",
@@ -7668,7 +7668,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or Aptitude Test group.",
+    "exceptions": "* Choose between English group or Aptitude Test group.",
     "min_GPA": "2.00",
     "min_IELTS": "USE",
     "min_TOEFL": "USE",
@@ -7750,7 +7750,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.00",
     "min_IELTS": "7.0 ukvi",
     "min_TOEFL": "",
@@ -7832,7 +7832,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.",
+    "exceptions": "* Choose between English group or sat eng.",
     "min_GPA": "",
     "min_IELTS": "5.5",
     "min_TOEFL": "61",
@@ -7883,7 +7883,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter \n2. IELTS All in one or \nSAT Eng\n3. Adv. IELTS All in one or \nAdv. SAT Eng\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter \n2. IELTS All in one or SAT Eng\n3. Adv. IELTS All in one or Adv. SAT Eng\n4. Portfolio & Interview"
   },
   {
     "id": "IP097",
@@ -7914,7 +7914,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose between English group or sat eng.",
+    "exceptions": "* Choose between English group or sat eng.",
     "min_GPA": "",
     "min_IELTS": "5.5",
     "min_TOEFL": "61",
@@ -7965,7 +7965,7 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter \n2. IELTS All in one or \nSAT Eng\n3. Adv. IELTS All in one or \nAdv. SAT Eng\n4. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter \n2. IELTS All in one or SAT Eng\n3. Adv. IELTS All in one or Adv. SAT Eng\n4. Portfolio & Interview"
   },
   {
     "id": "IP098",
@@ -7996,7 +7996,7 @@ const DATA = [
     "dateRound7Seats": null,
     "dateRound8": "",
     "dateRound8Seats": null,
-    "exceptions": "Choose only one test from each group.",
+    "exceptions": "* Choose only one test from each group.",
     "min_GPA": "3.25",
     "min_IELTS": "4.0",
     "min_TOEFL": "",
@@ -8047,8 +8047,8 @@ const DATA = [
     "rec_O_NET": "",
     "rec_GAT": "",
     "rec_PAT": "",
-    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or\nCU-TEP/TU-GET \n3. Adv. IELTS All in one or\nAdv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
+    "suggestedCourses": "1. Pre Inter\n2. IELTS All in one or CU-TEP/TU-GET \n3. Adv. IELTS All in one or Adv. CU-TEP/TU-GET\n4. BMAT ApTitude\n5. BMAT Physics\n6. BMAT Chemistry\n7. BMAT Biology\n8. BMAT Math\n9. BMAT Writing\n10. Portfolio & Interview"
   }
  ];
-
-export default DATA;
+ 
+ export default DATA;
