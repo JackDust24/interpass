@@ -29,7 +29,8 @@
     },
     "android": {
       "package": "com.interpassjason.interpath",
-      "permissions" : []
+      "permissions" : [],
+      "versionCode": 2
     }
   }
 }
